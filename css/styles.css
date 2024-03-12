@@ -219,3 +219,12 @@
     color: white;
     border-radius: 15px;
   }
+
+
+  /* Add padding around the footer as well */
+
+footer {
+  background-color: gray;
+  padding: 10px 10px;
+}
+

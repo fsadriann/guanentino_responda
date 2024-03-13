@@ -18,21 +18,22 @@ body{
     justify-content: space-between;
     align-items: center;
     height: 85px;
-    padding: 5px 10%;
+    padding: 0px 10%;
 }
 
 .header .logo{
     cursor: pointer;
+    color: white;
 }
 
-.header .logo img{
+.header .logo h1{
     height: 70px;
     width: auto;
     transition: all 0.3s;
 }
 
-.header .logo img:hover{
-    transform: scale(1.2);
+.header .logo h1:hover{
+  transform: scale(1.2);
 }
 
 .header .nav-links{
@@ -80,22 +81,6 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-* {
-    box-sizing: border-box;
-  }
 
   .poppins-thin {
     font-family: "Poppins", sans-serif;
@@ -212,45 +197,7 @@ body{
     background:transparent;
   }
 
-  .radio-inputs {
-    position: sticky;
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 0.5rem;
-    background-color: transparent;
-    box-sizing: border-box;
-    padding: 0.25rem;
-    width: 300px;
-    font-size: 14px;
-    
-  }
-  
-  .radio-inputs .radio {
-    flex: 1 1 auto;
-    text-align: center;
-  }
-  
-  .radio-inputs .radio input {
-    display: none;
-  }
-  
-  .radio-inputs .radio .name {
-    display: flex;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0.5rem;
-    border: none;
-    padding: 2px;
-    color: white;
-    transition: all .15s ease-in-out;
-  }
-  
-  .radio-inputs .radio input:checked + .name {
-    background-color: #1e1e1e;
-    font-weight: 600;
-    padding: 5px;
-  }
+
 
   img.bg {
     position: fixed;

@@ -51,17 +51,22 @@ nav a.active{
 }
 
 section {
-    min-height: 100vh;
+    min-height: 200vh;
     display: flex;
     justify-content: left;
-    padding-left: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
     align-items: center;
     background: transparent;
     font-size: 32px;
     color:#fff;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 section:nth-child(odd){
     background: #1e1e1e;
+}
+p{
+    font-weight: 300;
+    font-size: 20px;
 }

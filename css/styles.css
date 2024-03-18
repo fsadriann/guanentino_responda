@@ -53,12 +53,13 @@ nav a.active{
 section {
     min-height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    padding-left: 5px;
     align-items: center;
     background: transparent;
-    font-size: 100px;
+    font-size: 32px;
     color:#fff;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 section:nth-child(odd){

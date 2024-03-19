@@ -7,6 +7,19 @@
     font-family:'Poppins', sans-serif;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:  20px 120px;
+    background: #240000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
 body {
     min-height: 100vh;
     background: url(../img/gradient.png) no-repeat;
@@ -15,48 +28,35 @@ body {
     background-position: center;
 }
 
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding:  20px 100px;
-    background: #1e1e1e;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-}
 
 .logo {
-    font-size: 32px;
+    font-size: 25px;
     color: #fff;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 nav a {
-    position: relative;
     font-size: 18px;
-    color: gray;
-    font-weight: 500;
+    color: #fff;
     text-decoration: none;
-    margin-left: 40px;
+    font-weight: 500;
+    margin-left: 35px;
     transition: .3s;
 }
 
-nav a:hover, 
-nav a.active{
-    color: #fff;
+nav a:hover, nav a.active{
+    color: #0ef;
 }
 
+
 section {
-    min-height: 200vh;
+    min-height: 100vh;
     display: flex;
-    justify-content: left;
+    justify-content: center;
+    align-items: center;
     padding-left: 50px;
     padding-right: 50px;
-    align-items: center;
     background: transparent;
     font-size: 32px;
     color:#fff;
@@ -66,6 +66,7 @@ section {
 section:nth-child(odd){
     background: #1e1e1e;
 }
+
 p{
     font-weight: 300;
     font-size: 20px;

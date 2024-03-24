@@ -22,7 +22,7 @@ header {
 
 body {
     min-height: 100vh;
-    background: url(../img/gradient.png) no-repeat;
+    background: linear-gradient(#5A1616, #1c1c1c);
     background-size: cover;
     scroll-behavior: smooth;
     background-position: center;
@@ -56,26 +56,33 @@ nav a:hover, nav a.active{
     padding: 100px;
 }
 
-
-
 section {
     min-height: 100vh;
     display: flex;
     justify-content: left;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     padding: 100px;
     background: transparent;
     font-size: 32px;
     color:#fff;
     font-weight: 400;
+    
 }
 
 section:nth-child(odd){
-    background: #1e1e1e;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;    
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 2px 16px rgba(0, 0, 0, .37);
 }
+
 
 p{
     font-weight: 300;
     font-size: 20px;
+    color: #fff;
+
 }

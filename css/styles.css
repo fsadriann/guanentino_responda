@@ -56,26 +56,15 @@ nav a:hover, nav a.active{
     padding: 100px;
 }
 
-section1 {
-    min-height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: flex-start;
-    padding-top: 150px;
-    background: transparent;
-    font-size: 32px;
-    color:#fff;
-    font-weight: 400;
-}
+
 
 section {
-    min-height: auto;
+    min-height: 100vh;
     display: flex;
     justify-content: left;
     flex-direction: column;
     align-items: center;
-    padding-top: 100px;
+    padding: 100px;
     background: transparent;
     font-size: 32px;
     color:#fff;

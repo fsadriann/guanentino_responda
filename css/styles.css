@@ -26,7 +26,7 @@ body {
     background-size: cover;
     scroll-behavior: smooth;
     background-position: center;
-    background: linear-gradient(-45deg, #1e1e1e, #811C1C, #240000, #5A1616);
+    background: linear-gradient(-45deg, #1e1e1e, #7B3232, #240000, #5A1616);
     background-size: 400% 400%;
     animation: animate 15s ease infinite;
 }

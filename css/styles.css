@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 
 *{
     margin: 0;
@@ -18,6 +19,11 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+}
+
+h1{
+    font-family: 'dela gothic one', sans-serif;
+    font-size: 30;
 }
 
 body {
@@ -66,7 +72,7 @@ section {
     background: transparent;
     font-size: 32px;
     color:#fff;
-    font-weight: 400;
+    font-weight: 300;
     
 }
 
@@ -79,10 +85,118 @@ section:nth-child(odd){
     box-shadow: 0 2px 16px rgba(0, 0, 0, .37);
 }
 
-
 p{
     font-weight: 300;
     font-size: 20px;
     color: #fff;
 
+}
+
+footer{
+    background-color: #111;
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s ;
+}
+
+.socialIcons a:hover i{
+    background-color: #fff;
+    transition: 0.5s ;
+}
+
+.footerNav {
+    margin: 30px 0;
+}
+
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+
+.footerBottom{
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p{
+    font-size: 10px;
+    color: white;
+}
+
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+@media (max-width: 700px) {
+
+    header{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    a.logo, nav{
+        width: 100%;
+        align-items: center;
+    }
+
+    .footerNav ul{
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+
+    section{
+        align-items: center;
+        margin: 0;
+        padding: 10px;
+    }
 }

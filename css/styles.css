@@ -14,7 +14,11 @@ header {
     left: 0;
     width: 100%;
     padding:  20px 120px;
-    background: #240000;
+    background: linear-gradient(135deg, rgba(104, 48, 48, 0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 2px 16px rgba(0, 0, 0, .37);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,7 +66,7 @@ nav a {
 }
 
 nav a:hover, nav a.active{
-    color: #fff;
+    color: #7B3232;
 }
 
 .container {
@@ -87,12 +91,8 @@ section {
 }
 
 section:nth-child(odd){
-    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 20px;    
-    border: 1px solid rgba(255,255,255,0.18);
-    box-shadow: 0 2px 16px rgba(0, 0, 0, .37);
+    background:#1e1e1e;
+    border-radius: 20px;
 }
 
 p{

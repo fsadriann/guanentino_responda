@@ -8,6 +8,10 @@
     font-family:'Poppins', sans-serif;
 }
 
+img {
+    border-radius: 20px;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -48,6 +52,17 @@ body {
     
 }
 
+.sesiones {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img-sesiones {
+    padding: 10px;
+    width: 40%;
+    border-radius: 20px;
+}
 
 .logo {
     font-size: 25px;
@@ -74,6 +89,16 @@ nav a:hover, nav a.active{
     max-width: 1280px;
     margin: auto;
     padding: 100px;
+}
+
+a{
+    cursor: pointer;
+    color: gray;
+    transition: .3s ease;
+}
+
+a:hover{
+    color: #fff;
 }
 
 section {

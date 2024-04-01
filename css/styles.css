@@ -66,7 +66,7 @@ nav a {
 }
 
 nav a:hover, nav a.active{
-    color: #7B3232;
+    color: #fff;
 }
 
 .container {

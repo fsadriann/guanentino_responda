@@ -91,6 +91,73 @@ nav a:hover, nav a.active{
     padding: 100px;
 }
 
+
+img {
+    width: 100%;
+  }
+  
+
+.testimonial {
+    color: black;
+    padding: 40px;
+
+    
+  }
+
+  /* Envuelve la imagen dentro de una figura circular y define su altura para que tome todo el alto de su elemento padre */
+
+.testimonial img {
+    height: 100%;
+    clip-path: circle();
+    
+}
+
+/* Alinea el texto al centro */
+
+.testimonial h3{
+  text-align: center;
+  
+}
+
+/* Crear un grid de tres columnas equidistantes. Definir un espaciado de 40px entre ellas */
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:20px;
+  }
+
+  /* Crear una tarjeta en blanco con sombreado alrededor */
+  .card {
+    justify-content: space-around;
+    padding: 10px;
+    background: linear-gradient(135deg, rgba(104, 48, 48, 0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 2px 16px rgba(0, 0, 0, .37);
+    border-radius: 20px;
+    text-align: center;
+  }
+
+  .circle {
+    background-color: transparent;
+    border:3px solid #240000;
+    height:90px;
+    position: relative;
+    top: -30px;
+    left: 70px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:90px;
+}
+
+h3{
+    color: #fff;
+}
+
+
 a{
     cursor: pointer;
     color: gray;

@@ -143,14 +143,14 @@ img {
   .circle {
     background-color: transparent;
     border:3px solid #240000;
-    height:90px;
+    height:110px;
     position: relative;
     top: -30px;
-    left: 70px;
+    left: 85px;
     border-radius:50%;
     -moz-border-radius:50%;
     -webkit-border-radius:50%;
-    width:90px;
+    width:110px;
 }
 
 h3{

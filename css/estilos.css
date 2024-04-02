@@ -117,9 +117,26 @@
 body{
     background-image: url(../img/gradient.png);
     background-size: cover;
-    background-position: center;
     background-attachment: fixed;
+    background-position: center;
+    background: linear-gradient(-45deg, #1e1e1e, #7B3232, #240000, #5A1616);
+    background-size: 400% 400%;
+    animation: animate 15s ease infinite;
 }
+
+@keyframes animate {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+    
+}
+
 
 main{
     width: 100%;

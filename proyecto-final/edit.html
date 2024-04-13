@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Cambiar de perfil</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <p><a href="home.php">Guanentino, ¡Responda!</a>
+            </p>
+        </div>
+
+        <div class="right-links">
+            <a href="#">Cambiar de perfil</a>
+            <a href="logout.php"><button class="btn">Cerrar sesión</button></a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box form-box">
+            <form action="">
+                <header>Editar perfil</header>
+                <div class="field input">
+                    <input type="text" name="username" id="username" placeholder="Usuario" autocomplete="off" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+    
+                <div class="field input">
+                    <input type="text" name="email" id="email" placeholder="Email" autocomplete="off" required>
+                    <i class='bx bxs-envelope'></i>
+                </div>
+    
+                <div class="field input">
+                    <input type="number" name="age" id="age" placeholder="Edad" autocomplete="off" required>
+                    <i class='bx bxs-group'></i>
+                </div>
+    
+                <div class="field">
+                    <input type="submit" name="submit" value="Actualizar" class="btn"></input>
+                </div>
+    
+                <div class="links">
+                    <p>¿Ya te has registrado? <a href="index.html">Inicia sesión</a></p>
+                </div>
+</body>
+</html>

@@ -35,12 +35,12 @@ body {
 
 .wrapper{
     width: 420px;
-    background: transparent;
+    background: rgba(3,3,3,.5);
     border: 2px solid rgba(255,255,255, .2);
     backdrop-filter: blur(20px);
     box-shadow: 0 0 10px rgba(0,0,0,.1);
     color: #fff;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 30px 40px;
 }
 
@@ -116,6 +116,12 @@ body {
     font-weight: 600;
 }
 
+.btn:hover{
+    transition: .3s ease-in-out;
+    background:#333;
+    color: #fff;
+}
+
 .wrapper .register_link {
     font-size: 14.5px;
     text-align: center;
@@ -130,4 +136,8 @@ body {
 
 .register_link p:hover{
     text-decoration: underline;
+}
+
+input::placeholder{
+    opacity: 30%;
 }

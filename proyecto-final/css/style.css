@@ -170,12 +170,7 @@ a:hover{
 
 .logo a{
     text-decoration: none;
-    color: #ffffffa4;
-}
-
-.logo a:hover{
-    transition: .3s;
-    color: white;
+    color: #fff;
 }
 
 .right-links a{

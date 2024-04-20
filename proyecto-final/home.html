@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Home</title>
 </head>
 <body>
@@ -14,8 +15,11 @@
         </div>
 
         <div class="right-links">
-            <a href="#">Cambiar de perfil</a>
+            <a href="#"><button class="btnlink">Ayuda</button></a>
+
+            <a href="#"><button class="btn2">Mis respuestas</button></a>
             <a href="logout.php"><button class="btn">Cerrar sesión</button></a>
+            <a href="#">Cambiar de perfil</a>
         </div>
     </div>
     <main>
@@ -25,9 +29,13 @@
                 <div class="box">
                     <p>Hola <b>Adrián</b>, Bienvenido.</p>
                 </div>
-                <div class="box">
-                    <p>Tu correo electrónico es: <b>123@gmail.com</b>.</p>
+                <div class="streak-box">
+                    <b class="streak">0 </b>
+                    <svg width="50" height="50" viewBox="-2.5 -2.5 35 35" fill="none" xmlns="http://www.w3.org/2000/svg"><g class="group-hover:animate-flameMain"><path d="M3.17621 14.6309C3.17621 14.6309 4.36145 16.3721 6.84559 17.846C6.84559 17.846 5.04646 2.64076 16.7689 0C13.7656 11.0227 20.5892 14.1313 23.0766 8.30777C27.2305 13.8537 24.0765 18.6923 24.0765 18.6923C25.7798 18.9377 27.2105 17.0769 27.2105 17.0769C27.2233 17.3061 27.2305 17.5369 27.2305 17.7693C27.2305 24.5241 21.7547 30 14.9998 30C8.24492 30 2.76904 24.5241 2.76904 17.7693C2.76904 16.6842 2.91107 15.6325 3.17621 14.6309Z" fill="#FF6536"></path><path d="M27.2108 17.0769C27.2108 17.0769 25.7801 18.9377 24.0768 18.6923C24.0768 18.6923 27.2307 13.8537 23.0769 8.30777C20.5895 14.1313 13.7658 11.0227 16.7692 0C16.1413 0.141445 15.5526 0.31916 15 0.528398V30C21.7549 30 27.2307 24.5241 27.2307 17.7693C27.2307 17.5368 27.2236 17.3061 27.2108 17.0769Z" fill="#FF421D"></path></g><g class="group-hover:animate-flameInner"><path d="M9.63623 24.6363C9.63623 27.5987 12.0378 30.0002 15.0001 30.0002C17.9625 30.0002 20.364 27.5987 20.364 24.6363C20.364 23.0507 19.6761 21.6258 18.5823 20.6439C16.5085 23.4613 13.5531 19.1875 15.8563 16.0664C15.8563 16.0664 9.63623 16.8459 9.63623 24.6363Z" fill="#FBBF00"></path><path d="M20.3639 24.6363C20.3639 23.0507 19.676 21.6258 18.5822 20.6439C16.5083 23.4613 13.553 19.1875 15.8562 16.0664C15.8562 16.0664 15.5182 16.1089 15 16.2724V30.0002C17.9624 30.0002 20.3639 27.5987 20.3639 24.6363Z" fill="#FFA900"></path></g></svg>
+                    <p class="streak-advice">Tu racha</p>
+                    <p class="streak-text">¡Mantén tu racha de respuestas intacta!</p>
                 </div>
+            </div>
             </div>
             <div class="bottom">
                 <div class="box">

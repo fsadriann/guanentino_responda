@@ -38,6 +38,18 @@ body {
 }
 
 .box{
+    width: 30%;
+    background: rgba(3,3,3,.5);
+    border: 2px solid rgba(255,255,255, .2);
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1), 0 32px 64px -48px rgba(0,0,0,0.5);
+}
+
+.streak-box{
     background: rgba(3,3,3,.5);
     border: 2px solid rgba(255,255,255, .2);
     backdrop-filter: blur(20px);    display: flex;
@@ -45,6 +57,26 @@ body {
     padding: 25px 25px;
     border-radius: 20px;
     box-shadow: 0 0 128px 0 rgba(0,0,0,0.1), 0 32px 64px -48px rgba(0,0,0,0.5);
+}
+
+.streak-box svg{
+    position: absolute;
+    right: 20px;
+    top: 40%;
+    transform: translateY(-50%);
+    font-size: 40px;
+}
+
+.streak{
+    font-size: 40px;
+}
+
+.streak-advice{
+    font-size: 25px;
+}
+
+.streak-text{
+    font-size: 15px;
 }
 
 .form-box{
@@ -120,6 +152,45 @@ body {
     color: #fff;
 }
 
+.btn2{
+    padding: 10px;
+    height: 45px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn2:hover{
+    transition: .3s ease-in-out;
+    background:#fff;
+    color: #333;
+}
+
+.btnlink{
+    padding: 10px;
+    height: 45px;
+    background: transparent;
+    border: 2px transparent;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.btnlink:hover{
+    transition: .3s ease-in-out;
+    background: rgba(3,3,3,.6);
+    color: #fff;
+}
+
 .form-box .links {
     font-size: 14.5px;
     text-align: center;
@@ -143,12 +214,13 @@ input::placeholder{
 /*********** Home ***********/
 
 a{
-    color: #fff;
+    color: gray ;
     text-decoration: none;
 }
 
 a:hover{
-    text-decoration: underline;
+    color: white;
+    transition: .3s ease-in;
 }
 
 .nav{

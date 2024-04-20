@@ -232,6 +232,15 @@ a:hover{
     z-index: 100;
 }
 
+.nav i{
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    cursor: pointer;
+}
+
 .logo{
     font-size: 30px;
     font-weight: 700;

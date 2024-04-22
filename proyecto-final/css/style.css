@@ -8,27 +8,6 @@
     font-family:'Poppins', sans-serif;
 }
 
-body {
-    background-size: cover;
-    background-position: center;
-    background: linear-gradient(-45deg, #1e1e1e, #7B3232, #240000, #5A1616);
-    background-size: 400% 400%;
-    animation: animate 15s ease infinite;
-    color: #fff;
-}
-
-@keyframes animate {
-    0%{
-        background-position: 0 50%;
-    }
-    50%{
-        background-position: 100% 50%;
-    }
-    100%{
-        background-position: 0 50%;
-    }
-    
-}
 
 .container{
     display: flex;
@@ -130,10 +109,12 @@ input::placeholder{
 :root{
     --body-color: #a08585;
     --sidebar-color: #fff;
-    --primary-color: #7b3232;
+    --primary-color: #973e3e;
     --primary-color-light: #f1c3c3;
     --toggle-color: #ddd;
-    --text-color: #707070;
+    --text-color: #4d4d4d;
+    --section-text-color: #fff;
+
 
     --tran-02: all 0.2s ease;
     --tran-03: all 0.3s ease;
@@ -141,19 +122,21 @@ input::placeholder{
     --tran-05: all 0.5s ease;
 }
 
-.home{
+body{
     height: 100vh;
     background: var(--body-color);
     color: #000;
+    transition: var(--tran-05);
 }
 
-.home.dark{
+body.dark{
     --body-color: #141111;
     --sidebar-color: #242526;
     --primary-color: #2b1111;
     --primary-color-light: #3c3a3a;
     --toggle-color: #fff;
     --text-color: #ccc;
+    --section-text-color: #ccc;
 }
 
 /*---- Sidebar ----*/
@@ -165,6 +148,12 @@ input::placeholder{
     width: 250px;
     padding: 10px 14px;
     background: var(--sidebar-color);
+    transition: var(--tran-05);
+    z-index: 100;
+}
+
+.sidebar.close{
+    width: 88px;
 }
 
 /*---- Resuable CSS ----*/
@@ -173,11 +162,20 @@ input::placeholder{
     font-size: 16px;
     font-weight: 500;
     color: var(--text-color);
+    transition: var(--tran-03);
+    white-space: nowrap;
+    opacity: 1;
 }
+
+.sidebar.close .text{
+    opacity: 0;
+}
+
 .sidebar .image{
     min-width: 60px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .sidebar li{
@@ -234,9 +232,9 @@ header .image-text .header-text{
     position: absolute;
     top: 50%;
     right: -25px;
-    transform: translateY(-50%);
     height: 25px;
     width: 25px;
+    transform: translateY(-50%) rotate(180deg);
     background: var(--primary-color);
     display: flex;
     align-items: center;
@@ -244,11 +242,25 @@ header .image-text .header-text{
     border-radius: 50%;
     color: var(--sidebar-color);
     font-size: 22px;
+    transition: var(--tran-03);
+}
+
+.sidebar.close header .toggle{
+    transform: translateY(-50%);
+}
+
+body.dark .sidebar header .toggle{
+    color: var(--text-color);
+}
+
+.sidebar .menu{
+    margin-top: 35px;
 }
 
 .sidebar .search-box{
     background: var(--primary-color-light);
     border-radius: 10px;
+    transition: var(--tran-05);
 }
 
 .search-box input{
@@ -257,7 +269,11 @@ header .image-text .header-text{
     outline: none;
     border: none;
     border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
     background: var(--primary-color-light);
+    transition: var(--tran-05);
+    color: var(--text-color);
 }
 
 .sidebar li a{
@@ -280,6 +296,11 @@ header .image-text .header-text{
     color: var(--sidebar-color);
 }
 
+body.dark .sidebar li a:hover .icon,
+body.dark .sidebar li a:hover .text{
+    color: var(--text-color);
+}
+
 .sidebar .menu-bar{
     height: calc(100% - 50px);
     display: flex;
@@ -288,6 +309,7 @@ header .image-text .header-text{
 }
 
 .menu-bar .mode{
+    position: relative;
     background: var(--primary-color-light);
     border-radius: 10px;
 }
@@ -303,19 +325,33 @@ header .image-text .header-text{
 
 .menu-bar .mode i{
     position: absolute;
+    transition: var(--tran-03);
 }
 
 .menu-bar .mode i.sun{
     opacity: 0;
 }
 
+body.dark .menu-bar .mode i.sun{
+    opacity: 1;
+}
+
+body.dark .menu-bar .mode i.moon{
+    opacity: 0;
+}
+
 .menu-bar .mode .toggle-switch{
+    position: absolute;
     display: flex;
+    right: 0;
     align-items: center;
     justify-content: center;
     height: 100%;
     min-width: 60px;
     cursor: pointer;
+    border-radius: 10px;
+    background: var(--primary-color-light);
+    transition: var(--tran-05);
 }
 
 .toggle-switch .switch{
@@ -324,6 +360,7 @@ header .image-text .header-text{
     width: 44px;
     border-radius: 25px;
     background: var(--toggle-color);
+    transition: var(--tran-05);
 }
 
 .switch::before{
@@ -339,6 +376,27 @@ header .image-text .header-text{
     transition: var(--tran-03);
 }
 
-.home.dark .switch::before{
+body.dark .switch::before{
     left: 24px;
+}
+
+.home{
+    position: relative;
+    left: 250px;
+    height: 100vh;
+    width: calc(100% - 250px);
+    background: var(--body-color);
+    transition: var(--tran-05);
+}
+
+.home .text{
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--section-text-color);
+    padding: 10px 40px;
+}
+
+.sidebar.close ~ .home{
+    left: 88px;
+    width: calc(100% - 88px);
 }

@@ -373,7 +373,7 @@ body.dark .menu-bar .mode i.moon{
     left: 5px;
     transform: translateY(-50%);
     background: var(--sidebar-color);
-    transition: var(--tran-03);
+    transition: var(--tran-05);
 }
 
 body.dark .switch::before{

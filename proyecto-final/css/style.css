@@ -402,13 +402,7 @@ body.dark .switch::before{
     padding: 10px 40px;
 }
 
-.home .content{
-    color: var(--text-color);
-    width: 800px;
-    height: 80%;
-    border-radius: 15px;
-    background: var(--sidebar-color);
-}
+
 
 .sidebar.close ~ .home{
     left: 88px;

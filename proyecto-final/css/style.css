@@ -107,13 +107,14 @@ input::placeholder{
 /*********** Home ***********/
 
 :root{
-    --body-color: #a08585;
-    --sidebar-color: #fff;
+    --body-color: #bdbdbd;
+    --sidebar-color: #752f2f;
     --primary-color: #973e3e;
-    --primary-color-light: #f1c3c3;
+    --primary-color-light: #5a3535;
     --toggle-color: #ddd;
-    --text-color: #4d4d4d;
-    --section-text-color: #fff;
+    --text-color: #fff;
+    --content-color: #a0a0a0;
+    --section-text-color: #000;
 
 
     --tran-02: all 0.2s ease;
@@ -136,6 +137,7 @@ body.dark{
     --primary-color-light: #3c3a3a;
     --toggle-color: #fff;
     --text-color: #ccc;
+    --content-color: #333333;
     --section-text-color: #ccc;
 }
 
@@ -146,7 +148,7 @@ body.dark{
     left: 0;
     height: 100%;
     width: 300px;
-    padding: 10px 14px;
+    padding: 10px 15px;
     background: var(--sidebar-color);
     transition: var(--tran-05);
     z-index: 100;
@@ -179,7 +181,7 @@ body.dark{
 }
 
 .sidebar li{
-    height: 50px;
+    height: 45px;
     margin-top: 10px;
     list-style: none;
     display: flex;
@@ -235,12 +237,12 @@ header .image-text .header-text{
     height: 25px;
     width: 25px;
     transform: translateY(-50%) rotate(180deg);
-    background: var(--primary-color);
+    background: var(--primary-color-light);
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    color: var(--sidebar-color);
+    color: var(--text-color);
     font-size: 22px;
     transition: var(--tran-03);
     cursor: pointer;
@@ -296,7 +298,7 @@ body.dark .sidebar header .toggle{
 
 .sidebar li a:hover .icon,
 .sidebar li a:hover .text{
-    color: var(--sidebar-color);
+    color: var(--text-color);
 }
 
 body.dark .sidebar li a:hover .icon,
@@ -385,6 +387,8 @@ body.dark .switch::before{
 
 .home{
     display: flex;
+    
+    gap: 10px;
     position: relative;
     left: 300px;
     height: 100vh;
@@ -396,12 +400,32 @@ body.dark .switch::before{
 
 
 .home .text{
+
     font-size: 30px;
     font-weight: 500;
     color: var(--section-text-color);
     padding: 10px 40px;
 }
 
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 100px;
+    font-size: 30px;
+    font-weight: 500;
+    border-radius: 15px;
+    width: 980px;
+    background-color: var(--content-color);
+    padding: 20px 40px 20px;
+}
+
+.subject-container{
+    padding: 10px;
+    width: 960px;
+    background-color: var(--primary-color);
+    border-radius: 15px;
+}
 
 
 .sidebar.close ~ .home{

@@ -22,3 +22,13 @@ const body = document.querySelector("body"),
             modeText.innerText= "Dark Mode";
         }
     });
+
+// active class
+
+const navLinksEls = document.querySelectorAll('nav-link');
+
+navLinksEls.forEach(navLinkEl =>{
+    navLinkEl.addEventListener('click', () =>{
+        navLinkEl.classList.add(active);
+    });
+});

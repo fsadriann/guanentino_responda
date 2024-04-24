@@ -108,22 +108,30 @@ input::placeholder{
 
 :root{
     --body-color: #bdbdbd;
-    --sidebar-color: #752f2f;
-    --primary-color: #973e3e;
+    --sidebar-color: #3e4042;
+    --primary-color: hsl(0, 43%, 18%);
     --primary-color-light: #5a3535;
     --toggle-color: #ddd;
     --text-color: #fff;
     --content-color: #a0a0a0;
     --section-text-color: #000;
 
-    --subject-color1: #4265cf;
+    --subject-color1: #5872c0;
     --subject-color2: #68a749;
     --subject-color3: #7e3666;
     --subject-color4: #4a8379;
     --subject-color5: #bb9456;
+    --subject-color6: #bb5656;
+
+    --hover-color1: hsl(225, 45%, 50%);
+    --hover-color2: hsl(100, 39%, 42%);
+    --hover-color3: hsl(320, 40%, 30%);
+    --hover-color4: hsl(169, 28%, 35%);
+    --hover-color5: hsl(37, 43%, 49%);
+    --hover-color6: hsl(0, 43%, 49%);
 
 
-    --subject-text: #000;
+    --subject-text: #dfdfdf;
 
 
 
@@ -131,13 +139,6 @@ input::placeholder{
     --tran-03: all 0.3s ease;
     --tran-04: all 0.4s ease;
     --tran-05: all 0.5s ease;
-}
-
-body{
-    height: 100vh;
-    background: var(--body-color);
-    color: #000;
-    transition: var(--tran-05);
 }
 
 body.dark{
@@ -155,6 +156,16 @@ body.dark{
     --subject-color3: #240018;
     --subject-color4: #00241e;
     --subject-color5: #241600;
+    --subject-color6: #3B0606;
+
+    --hover-color1: hsl(225, 100%, 12%);
+    --hover-color2: hsl(100, 100%, 12%);
+    --hover-color3: hsl(320, 100%, 12%);
+    --hover-color4: hsl(170, 100%, 12%);
+    --hover-color5: hsl(37, 100%, 12%);
+    --hover-color6: hsl(0, 82%, 18%);
+
+
 
 
     --subject-text: #ccc;
@@ -162,6 +173,14 @@ body.dark{
 
 
 }
+body{
+    height: 100vh;
+    background: var(--body-color);
+    color: #000;
+    transition: var(--tran-05);
+}
+
+
 
 /*---- Sidebar ----*/
 .sidebar{
@@ -436,17 +455,35 @@ body.dark .switch::before{
 
 .content{
     display: grid;
-    grid-template-columns: 24% 24% 24% 24%;
+    grid-template-columns: 32% 32% 32%;
     justify-content: space-around;
     align-items: center;
     grid-gap: 10px;
     row-gap: 10px;
     font-size: 30px;
     font-weight: 500;
-    border-radius: 15px;
-    width: 80%;
+    border-radius: 30px;
     background-color: var(--content-color);
-    padding: 30px 30px ;
+    padding: 10px 10px ;
+}
+
+.text p{
+    padding: 10px;
+    font-weight: 600;
+}
+
+.content p{
+    font-size: 12px;
+    padding-top: 20px;
+}
+
+.content p:hover{
+    text-decoration: underline;
+}
+
+.content i{
+    font-size: 20px;
+    transform: translateY(25%);
 }
 
 .subject-container1{
@@ -454,7 +491,7 @@ body.dark .switch::before{
     height: 180px;
     padding: 20px 20px;
     background-color: var(--subject-color1);
-    border-radius: 15px;
+    border-radius: 20px;
     color: var(--subject-text);
 }
 
@@ -463,7 +500,7 @@ body.dark .switch::before{
     height: 180px;
     padding: 20px 20px;
     background-color: var(--subject-color2);
-    border-radius: 15px;
+    border-radius: 20px;
     color: var(--subject-text);
 
 }
@@ -473,7 +510,7 @@ body.dark .switch::before{
     height: 180px;
     padding: 20px 20px;
     background-color: var(--subject-color3);
-    border-radius: 15px;
+    border-radius: 20px;
     color: var(--subject-text);
 
 }
@@ -483,7 +520,7 @@ body.dark .switch::before{
     height: 180px;
     padding: 20px;
     background-color: var(--subject-color4);
-    border-radius: 15px;
+    border-radius: 20px;
     color: var(--subject-text);
 
 }
@@ -493,11 +530,55 @@ body.dark .switch::before{
     height: 180px;
     padding: 20px 20px;
     background-color: var(--subject-color5);
-    border-radius: 15px;
+    border-radius: 20px;
     color: var(--subject-text);
 
 }
 
+.subject-container6{
+    width: 100%;
+    height: 180px;
+    padding: 20px 20px;
+    background-color: var(--subject-color6);
+    border-radius: 20px;
+    color: var(--subject-text);
+
+}
+
+.subject-container1:hover{
+    background-color: var(--hover-color1);
+    transition: var(--tran-05);
+    cursor: pointer;
+}
+.subject-container2:hover{
+    background-color: var(--hover-color2);
+    transition: var(--tran-05);
+    cursor: pointer;
+}
+
+.subject-container3:hover{
+    background-color: var(--hover-color3);
+    transition: var(--tran-05);
+    cursor: pointer;
+}
+
+.subject-container4:hover{
+    background-color: var(--hover-color4);
+    transition: var(--tran-05);
+    cursor: pointer;
+}
+
+.subject-container5:hover{
+    background-color: var(--hover-color5);
+    transition: var(--tran-05);
+    cursor: pointer;
+}
+
+.subject-container6:hover{
+    background-color: var(--hover-color6);
+    transition: var(--tran-05);
+    cursor: pointer;
+}
 
 .sidebar.close ~ .home{
     left: 88px;

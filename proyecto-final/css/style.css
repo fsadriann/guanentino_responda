@@ -469,38 +469,6 @@ body.dark .switch::before{
     padding-bottom: 20px;
 }
 
-circle{
-    fill: none;
-    stroke-width: 20;
-    stroke-dasharray: 100 100;
-    stroke: #444;
-    transform: rotate(-90deg);
-    transform-origin: 50%;
-}
-
-circle:nth-child(2){
-    stroke: #68a749;
-    stroke-dasharray: 0 100;
-    animation: fill .4s linear forwards;
-}
-
-@keyframes fill{
-    to{
-    stroke-dasharray: var(--porcentaje) 100;
-    }
-}
-
-.porcentajes{
-    position: relative;
-}
-.porcentajes span{
-    font-family: "prompt";
-    position: absolute;
-    color: var(--subject-text);
-    display: flex;
-    top: 42%;
-    left: 42%;
-}
 
 .home{
     display: flex;
@@ -543,12 +511,14 @@ circle:nth-child(2){
     font-weight: 600;
 }
 
-.content p{
+.content a{
     font-size: 12px;
     padding-top: 20px;
+    text-decoration: none;
+    color: var(--text-color);
 }
 
-.content p:hover{
+.content a:hover{
     text-decoration: underline;
 }
 

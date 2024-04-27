@@ -297,12 +297,12 @@ header .image-text .header-text{
     right: -25px;
     height: 25px;
     width: 25px;
-    transform: translateY(-50%) rotate(180deg);
+    transform: translateY(-50%);
     background: var(--primary-color-light);
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    border-radius: 25%;
     color: var(--text-color);
     font-size: 22px;
     transition: var(--tran-03);
@@ -492,9 +492,13 @@ body.dark .switch::before{
     padding: 10px 40px;
 }
 
+.home h3{
+    padding-bottom: 20px;
+}
+
 .content{
     display: grid;
-    grid-template-columns: 31% 33% 31%;
+    grid-template-columns: 33% 33% 31%;
     justify-content: space-around;
     align-items: center;
     grid-gap: 10px;
@@ -507,7 +511,7 @@ body.dark .switch::before{
 }
 
 .text p{
-    padding: 10px;
+    padding-bottom: 15px;
     font-weight: 600;
 }
 
@@ -624,7 +628,10 @@ body.dark .switch::before{
     width: calc(100% - 88px);
 }
 
-@media (max-width:700px) {
+/* Pantallas pequeñas */
+
+@media only screen and (max-width: 600px) {
+
     .content p{
         font-size: 10px;
     }
@@ -632,4 +639,11 @@ body.dark .switch::before{
     .content h4{
         font-size: 20px;
     }
+}
+
+/* Pantallas grandes */
+
+@media only screen and (min-width: 600px) {
+
+
 }

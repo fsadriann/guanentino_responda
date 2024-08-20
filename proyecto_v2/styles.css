@@ -8,8 +8,8 @@
   --first-color: hsl(0, 55%, 36%);
   --black-color: hsl(225, 12%, 12%);
   --white-color: hsl(0, 0%, 100%);
-  --text-color: hsl(225, 8%, 65%);
-  --body-color: hsl(0, 0%, 100%);
+  --text-color: hsl(0, 0%, 95%);
+  --body-color: linear-gradient(180deg, rgba(148,0,0,1) 0%, rgba(30,30,30,1) 100%); 
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -47,7 +47,8 @@ html {
 
 body {
   font-family: var(--body-font);
-  background-color: var(--body-color);
+  background: rgb(148,0,0);
+  background: linear-gradient(180deg, rgba(148,0,0,1) 0%, rgba(30,30,30,1) 100%); 
   color: var(--text-color);
 }
 
@@ -73,14 +74,14 @@ a {
 
 .section h1 {
   font-size: var(--biggest-font-size);
-  color: var(--black-color);
+  color: var(--text-color);
   text-align: center;
 }
 
 /*=============== NAVBAR ===============*/
 .nav {
   position: fixed;
-  bottom: 1.5rem;
+  bottom: .5rem;
   left: 0;
   right: 0;
   background-color: var(--black-color);
@@ -119,79 +120,15 @@ a {
   cursor: pointer;
 }
 
-.nav__expand-icon {
-  display: inline-block;
-  color: var(--white-color);
+.home-icon {
+  border: none;
+  outline: none;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  background-color: var(--first-color);
+  border-radius: 25%;
   font-size: 1.5rem;
-  transition: transform .4s;
-}
-
-.nav__expand-list {
-  position: absolute;
-  top: -4.5rem;
-  left: 0;
-  right: 0;
-  background-color: var(--black-color);
-  box-shadow: 0 2px 16px hsla(228, 95%, 4%, .1);
-  width: max-content;
-  margin-inline: auto;
-  padding: .5rem 1.5rem;
-  border-radius: 4rem;
-  display: flex;
-  column-gap: 2rem;
-  z-index: -1;
-  overflow: hidden;
-  transform: translateY(5rem) scale(.1);
-  transition: transform .5s cubic-bezier(.5, 1.8, .4, .8);
-}
-
-.nav__expand-list li {
-  transform: translateY(-3rem);
-  transition: transform .4s;
-}
-
-.nav__expand-list li:nth-child(1) {
-  transition-delay: .2s;
-}
-
-.nav__expand-list li:nth-child(2) {
-  transition-delay: .3s;
-}
-
-.nav__expand-list li:nth-child(3) {
-  transition-delay: .4s;
-}
-
-.nav__expand-link {
-  color: var(--text-color);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: color .4s;
-}
-
-.nav__expand-link i {
-  font-size: 1.5rem;
-}
-
-.nav__expand-link span {
-  font-size: var(--tiny-font-size);
-  font-weight: var(--font-semi-bold);
-}
-
-.nav__expand-link:hover {
-  color: var(--white-color);
-}
-
-/* Show list */
-.show-list,
-.show-list li{
-  transform: translateY(0);
-}
-
-/* Rotate icon */
-.rotate-icon {
-  transform: rotate(135deg);
 }
 
 /* Active link */

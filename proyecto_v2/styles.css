@@ -1,6 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;600;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 /*=============== VARIABLES CSS ===============*/
 :root {
   /*========== Colors ==========*/
@@ -94,7 +93,7 @@ a {
   
 }
 
-.nav_top__list{
+.top-nav{
   position: fixed;
   display: flex;
   align-items: center;
@@ -105,16 +104,25 @@ a {
   width: 100%;
   height: 110px;
   box-shadow: 0 2px 16px hsla(228, 95%, 4%, .1);
-  padding: 5px;
+  padding: 15px;
 
 }
 
-.profile_sec_nav{
-  border: 2px white solid;
-  border-radius: 10px;
-  padding: 5px;
-  width: 45%;
+.profile{
+  border: 2px solid blue;
+}
+
+.profile button{
+  background-color: var(--black-color);
   height: 80px;
+  width: 200px;
+  padding: 10px;
+  border-radius: 15px;
+  text-align: start;
+  color: var(--text-color);
+  font-family: 'montserrat';
+  font-weight: 700;
+  font-size: 20px;
 }
 
 .nav__list {

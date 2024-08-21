@@ -97,6 +97,7 @@ a {
   position: fixed;
   display: flex;
   align-items: center;
+  justify-content: space-around;
   top: 0;
   left: 0;
   right: 0;
@@ -108,22 +109,35 @@ a {
 
 }
 
-.profile{
-  border: 2px solid blue;
-}
-
 .profile button{
   background-color: var(--black-color);
   height: 80px;
-  width: 200px;
+  width: 70%;
   padding: 10px;
   border-radius: 15px;
-  text-align: start;
+  text-align: center;
   color: var(--text-color);
   font-family: 'montserrat';
   font-weight: 700;
-  font-size: 20px;
+  font-size: 30px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
+
+.name-top{
+  text-align: left;
+  padding-left: 10px;
+  font-size: 15px;
+}
+
+.rank-button{
+  height: 40px;
+  width: 100px;
+}
+
+
+
 
 .nav__list {
   display: flex;

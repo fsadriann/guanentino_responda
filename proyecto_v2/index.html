@@ -4,8 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+    <style>
+
+
+.forgot{
+    display: flex;
+    justify-content: space-between;
+}
+#check{
+    margin-right: 10px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+section a{
+    color: #555;
+}
+    </style>
 </head>
-<body>
-    
+<body class="body-login">
+    <div class="header">
+        <h1>Bienvenido!</h1>
+        <p>Vamos a iniciar sesión.</p>
+    </div>
+    <div class="login-form">
+        <input type="text" class="input-field" placeholder="Usuario" autocomplete="off" required>
+
+        <input type="password" class="input-field" placeholder="Contraseña" autocomplete="off" required>
+
+        <input type="submit" class="submit-btn" value="Iniciar Sesión">
+    </div>
 </body>
 </html>

@@ -6,6 +6,7 @@
   /*Color mode HSL(hue, saturation, lightness)*/
   --first-color: hsl(0, 55%, 36%);
   --black-color: hsl(225, 12%, 12%);
+  --dark-color: #240000;
   --white-color: hsl(0, 0%, 100%);
   --text-color: hsl(0, 0%, 95%);
   --body-color: linear-gradient(180deg, rgba(148,0,0,1) 0%, rgba(30,30,30,1) 100%); 
@@ -44,7 +45,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+body-home {
   font-family: var(--body-font);
   background: rgb(148,0,0);
   background: linear-gradient(180deg, rgba(148,0,0,1) 0%, rgba(30,30,30,1) 100%); 
@@ -176,6 +177,78 @@ a {
   font-size: 1.5rem;
 }
 
+.body-login{
+background-color: var(--dark-color);
+font-family: var(--body-font);
+color: var(--text-color);
+padding: 20px;
+padding-top: 20%;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.header{
+  padding-bottom: 30%;
+}
+
+input{
+  font-family: var(--body-font);
+}
+
+.submit-btn{
+  width: 100%;
+  height: 60px;
+  font-size: 20px;
+  background: #222;
+  color: var(--text-color);
+  font-weight: 700;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.login-form{
+  width: 80%;
+  padding: 20px;
+  background-color: var(--white-color);
+  font-family: var(--body-font);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+
+.input-field{
+  width: 100%;
+  height: 60px;
+  font-size: 17px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 30px;
+  border: #bdbdbd 1px solid;
+  box-shadow: 0px 5px 10px 1px rgba(0,0,0, 0.05);
+  outline: none;
+  transition: .3s;
+}
+
+::placeholder{
+    font-weight: 500;
+    color: #222;
+}
+
+.body-login h1{
+  font-size: 45px;
+}
+
+.body-login p{
+  font-size: 30px;
+}
+
 /* Active link */
 .active-link {
   color: var(--white-color);
@@ -194,4 +267,6 @@ a {
   .container {
     margin-inline: auto;
   }
+} .body-login{
+  padding-top: 50px;
 }

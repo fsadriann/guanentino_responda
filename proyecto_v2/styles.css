@@ -178,19 +178,34 @@ a {
 }
 
 .body-login{
-background-color: var(--dark-color);
-font-family: var(--body-font);
-color: var(--text-color);
-padding: 20px;
-padding-top: 20%;
-display: flex;
-flex-direction: column;
-align-items: center;
+  height: 100vh;
+  background-color: var(--dark-color);
+  font-family: var(--body-font);
+  color: var(--text-color);
+  padding: 20px;
+  padding-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.header{
-  padding-bottom: 30%;
+.body-register{
+  height: 100vh;
+  background-color: var(--dark-color);
+  font-family: var(--body-font);
+  color: var(--text-color);
+  padding: 20px;
+  padding-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+
+.header{
+  padding-bottom: 10%;
+}
+
 
 input{
   font-family: var(--body-font);
@@ -198,7 +213,7 @@ input{
 
 .submit-btn{
   width: 100%;
-  height: 60px;
+  height: 50px;
   font-size: 20px;
   background: #222;
   color: var(--text-color);
@@ -210,7 +225,7 @@ input{
 }
 
 .login-form{
-  width: 80%;
+  width: 95%;
   padding: 20px;
   background-color: var(--white-color);
   font-family: var(--body-font);
@@ -223,14 +238,29 @@ input{
 
 
 
+.sign-up-link{
+  color: var(--black-color);
+}
+
+.sign-up-link{
+  text-align: center;
+  font-size: 15px;
+  margin-top: 20px;
+}
+.sign-up-link a{
+  color: #000;
+  font-weight: 600;
+}
+
+
 .input-field{
   width: 100%;
-  height: 60px;
+  height: 50px;
   font-size: 17px;
   padding: 15px;
   margin-bottom: 15px;
-  border-radius: 30px;
-  border: #bdbdbd 1px solid;
+  border-radius: 15px;
+  border: #bdbdbd 2px solid;
   box-shadow: 0px 5px 10px 1px rgba(0,0,0, 0.05);
   outline: none;
   transition: .3s;
@@ -242,11 +272,24 @@ input{
 }
 
 .body-login h1{
-  font-size: 45px;
+  font-size: 35px;
 }
 
 .body-login p{
-  font-size: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.body-register p{
+  text-align: center;
+}
+
+.login-form p{
+  font-size: 15px;
+}
+
+.login-form a:hover{
+  text-decoration: underline;
 }
 
 /* Active link */
@@ -256,9 +299,13 @@ input{
 
 /*=============== BREAKPOINTS ===============*/
 /* For medium devices */
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 450px){
   .nav {
     width: 350px;
+  }
+
+  .login-form p{
+    font-size: 10px;
   }
 }
 
@@ -267,6 +314,16 @@ input{
   .container {
     margin-inline: auto;
   }
-} .body-login{
-  padding-top: 50px;
+ .body-login{
+  padding-top: 30px;
+  }
+
+  .login-form{
+    width: 30%;
+  }
+
+  .header{
+    padding-bottom: 10%;
+    text-align: center;
+  }
 }

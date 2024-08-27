@@ -6,29 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
     <script src="main.js"></script>
-    <style>
-
-
-.forgot{
-    display: flex;
-    justify-content: space-between;
-}
-#check{
-    margin-right: 10px;
-}
-a{
-    text-decoration: none;
-}
-a:hover{
-    text-decoration: underline;
-}
-section a{
-    color: #555;
-}
-    </style>
 </head>
 <body class="body-login">
-    <div class="header">
+    <div class="header" style="padding-bottom: 50px;">
         <h1>Bienvenido!</h1>
         <p>Vamos a iniciar sesión.</p>
     </div>
@@ -38,6 +18,10 @@ section a{
         <input type="password" class="input-field" placeholder="Contraseña" autocomplete="off" required>
 
         <input type="submit" class="submit-btn" value="Iniciar Sesión">
+
+        <div class="sign-up-link">
+            <p>¿No tienes una cuenta? <a href="register.html" class="login-link">Regístrate.</a></p>
+        </div>
     </div>
 </body>
 </html>

@@ -46,8 +46,7 @@ html {
 }
 
 
-
-.body-home {
+.body-app {
   font-family: var(--body-font);
   background: rgb(148,0,0);
   background: linear-gradient(180deg, rgba(148,0,0,1) 0%, rgba(30,30,30,1) 100%); 
@@ -86,7 +85,7 @@ a {
   bottom: .5rem;
   left: 0;
   right: 0;
-  background-color: rgba(30, 30, 30, 0.7);
+  background-color: var(--black-color);
   width: 88%;
   margin-inline: auto;
   box-shadow: 0 2px 16px hsla(228, 95%, 4%, .1);
@@ -114,8 +113,8 @@ a {
 
 .profile button{
   background-color: var(--black-color);
+  width: 250px;
   height: 80px;
-  width: 70%;
   padding: 10px;
   border-radius: 15px;
   text-align: center;
@@ -125,7 +124,6 @@ a {
   font-size: 30px;
   align-items: center;
   display: flex;
-  justify-content: space-between;
 }
 
 .name-top{
@@ -134,9 +132,20 @@ a {
   font-size: 15px;
 }
 
+.topbar-buttons{
+  height: 80px;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
 .rank-button{
   height: 40px;
-  width: 100px;
+  width: 120px;
+  border-radius: 10px;
+  background-color: var(--black-color);
+  font-family: var(--body-font);
+  color: var(--text-color);
 }
 
 
@@ -158,7 +167,6 @@ a {
   color: var(--white-color);
 }
 
-/*=============== EXPAND LIST ===============*/
 .home {
   border: none;
   width: 40px;
@@ -205,7 +213,7 @@ a {
 
 
 .header{
-  padding-bottom: 10%;
+  margin-top: 20%;
 }
 
 
@@ -227,6 +235,7 @@ input{
   transition: .3s;
 }
 
+
 .google-login{
   width: 100%;
   height: 50px;
@@ -234,6 +243,7 @@ input{
   font-size: 20px;
   background-color: white;
   color: var(--black-color);
+  font-family: var(--body-font);
   font-weight: 700;
   border: 2px solid #222;
   border-radius: 30px;
@@ -242,6 +252,7 @@ input{
 }
 
 .login-form{
+  margin-top: 50%;
   width: 95%;
   padding: 20px;
   background-color: var(--white-color);

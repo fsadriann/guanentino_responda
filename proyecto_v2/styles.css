@@ -327,6 +327,23 @@ input{
 }
 
 /*=============== BREAKPOINTS ===============*/
+
+/* Para sitios de escritorio */
+
+@media screen and (min-width: 1080px){
+
+  .body-login, .body-register{
+    padding-top: 20px;
+  }
+  .login-form{
+    margin-top: 0;
+  }
+
+  .header{
+    margin-top: 0;
+  }
+}
+
 /* For medium devices */
 @media screen and (min-width: 450px){
   .nav {

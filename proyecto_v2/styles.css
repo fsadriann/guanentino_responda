@@ -9,6 +9,7 @@
   --dark-color: #240000;
   --white-color: hsl(0, 0%, 100%);
   --text-color: hsl(0, 0%, 95%);
+  --button-color: #cfc9c9 ;
   --body-color: linear-gradient(180deg, rgba(148,0,0,1) 0%, rgba(30,30,30,1) 100%); 
 
   /*========== Font and typography ==========*/
@@ -51,6 +52,7 @@ html {
   background: rgb(148,0,0);
   background: linear-gradient(180deg, rgb(109, 3, 3) 0%, rgba(30,30,30,1) 100%); 
   color: var(--text-color);
+  background-attachment: fixed;
 }
 
 ul {
@@ -373,3 +375,16 @@ input{
     text-align: center;
   }
 }
+
+/*========= BUTTONS ========*/
+.btn-intial{
+  margin-left: 14%;
+  padding: 40px 15px;
+  border-radius: 50%;
+  background-color: var(--button-color);
+  cursor: pointer;
+  border-width: 0px 0px 5px;
+  border-color: #9c9898;
+  border-style:groove;
+}
+/* ======= prueba========*/

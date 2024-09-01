@@ -73,6 +73,22 @@ a {
 .section {
   height: 100vh;
   padding-block: 2.5rem;
+  align-items: center;
+}
+
+.settings{
+  height: 100vh;
+  padding-block: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.settings h1 {
+  font-size: var(--biggest-font-size);
+  color: var(--text-color);
+  text-align: center;
 }
 
 .section h1 {
@@ -326,6 +342,26 @@ input{
 /* Active link */
 .active-link {
   color: var(--white-color);
+}
+
+/*   settings    */
+
+.settings-container{
+  padding: 25px;
+  margin-top: 10%;
+  background-color: #222;
+  opacity: 1;
+  width: 100%;
+  height: 80%;
+  border-radius: 30px;
+}
+
+.settings-container h2{
+  font-weight: 500;
+}
+
+.settings-container p{
+  font-size: 20px;
 }
 
 /*=============== BREAKPOINTS ===============*/

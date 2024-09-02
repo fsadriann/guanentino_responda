@@ -95,6 +95,7 @@ a {
   text-align: left;
   font-weight: 600;
   font-size: 25px;
+  margin-bottom: 5px;
 }
 
 .switch {
@@ -132,7 +133,7 @@ a {
   height: 20px;
   width: 20px;
   left: 4px;
-  bottom: 5px;
+  bottom: 3px;
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;
@@ -171,6 +172,11 @@ input:checked + .slider:before {
 .config_list a{
   color: var(--text-color);
   font-size: 20px;
+}
+
+.configs hr{
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 

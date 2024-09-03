@@ -55,6 +55,8 @@ html {
   background-attachment: fixed;
 }
 
+
+
 ul {
   list-style: none;
 }
@@ -451,6 +453,77 @@ input{
 
 .settings-container p{
   font-size: 20px;
+}
+
+.question-container{
+  margin: 20px;
+  padding: 20px;
+  height: 80vh;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--black-color);
+  border-radius: 25px;
+}
+
+.question-container h1{
+  margin-bottom: 20px;
+}
+
+.container-enunciado{
+  width: 90%;
+  height: 40%;
+  background-color: var(--white-color);
+  border-radius: 20px;
+}
+
+.opciones-respuesta{
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 90%;
+  width: 90%;
+}
+
+.opciones-respuesta button{
+  padding-left: 15px;
+  text-align: left;
+  height: 22.5%;
+  border-radius: 25px;
+  font-size: 20px;
+  color: var(--text-color);
+  font-family: var(--font-bold);
+  background-color: var(--black-color)
+}
+
+.opciones-respuesta button:hover{
+  transition: .3s all;
+  cursor: pointer;
+  background-color: #9c9898;
+}
+
+.opciones-respuesta label{
+  background-color: #ccc;
+  padding: 10px 15px;
+  border-radius: 50%;
+  color: var(--black-color);
+  font-weight: 700;
+}
+
+.btn-enviar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-enviar button{
+  width: 50%;
+  height: 60px;
+  font-family: var(--body-font);
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 20px;
+  background-color: ;
 }
 
 /*=============== BREAKPOINTS ===============*/

@@ -504,12 +504,19 @@ input{
 /*========= BUTTONS ========*/
 .btn-intial{
   margin-left: 14%;
-  padding: 40px 15px;
+  padding: 15px ;
   border-radius: 50%;
+  width: 90px;
+  height: 90px;
   background-color: var(--button-color);
   cursor: pointer;
   border-width: 0px 0px 5px;
   border-color: #9c9898;
   border-style:groove;
+}
+.btn-intial i{
+  font-size: 45px;
+  opacity: 1;
+  color: #9c9898;
 }
 /* ======= prueba========*/

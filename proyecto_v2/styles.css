@@ -458,7 +458,7 @@ input{
 .question-container{
   margin: 20px;
   padding: 20px;
-  height: 80vh;
+  height: 85vh;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -471,10 +471,16 @@ input{
 }
 
 .container-enunciado{
-  width: 90%;
-  height: 40%;
+  width: 95%;
+  height: 50%;
   background-color: var(--white-color);
   border-radius: 20px;
+  padding: 15px;
+}
+
+.container-enunciado p{
+  color: var(--black-color);
+  font-weight: 600;
 }
 
 .opciones-respuesta{
@@ -483,7 +489,7 @@ input{
   flex-direction: column;
   justify-content: space-around;
   height: 90%;
-  width: 90%;
+  width: 95%;
 }
 
 .opciones-respuesta button{
@@ -505,10 +511,11 @@ input{
 
 .opciones-respuesta label{
   background-color: #ccc;
-  padding: 10px 15px;
+  padding: 13px 20px;
+  font-size: 30px;
   border-radius: 50%;
   color: var(--black-color);
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .btn-enviar{
@@ -520,10 +527,11 @@ input{
   width: 50%;
   height: 60px;
   font-family: var(--body-font);
+  color: #115F10;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 18px;
   border-radius: 20px;
-  background-color: ;
+  background-color: #309C2E;
 }
 
 /*=============== BREAKPOINTS ===============*/

@@ -458,7 +458,6 @@ input{
 .question-container{
   margin: 20px;
   padding: 20px;
-  height: 85vh;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -469,18 +468,38 @@ input{
 .question-container h1{
   margin-bottom: 20px;
 }
+.question-container a{
+  left: 0;
+  color: var(--text-color);
+  font-size: 30px;
+}
+
+.question-header a{
+  top: 43px;
+  left: 10%;
+  position: absolute;
+}
 
 .container-enunciado{
   width: 95%;
-  height: 50%;
+  height:20%;
+  max-height: 400px;
   background-color: var(--white-color);
   border-radius: 20px;
   padding: 15px;
+  overflow: auto;
 }
 
 .container-enunciado p{
   color: var(--black-color);
   font-weight: 600;
+}
+.container-enunciado::-webkit-scrollbar{
+  width: 7px;
+}
+.container-enunciado::-webkit-scrollbar-thumb{
+  background: var(--black-color);
+  border-radius: 30px;
 }
 
 .opciones-respuesta{
@@ -488,18 +507,18 @@ input{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 90%;
   width: 95%;
 }
 
 .opciones-respuesta button{
-  padding-left: 15px;
+  padding: 15px;
   display: flex;
   align-items: center;
   text-align: left;
   height: 22.5%;
   border-radius: 25px;
-  font-size: 20px;
+  margin-bottom: 10px;
+  font-size: 15px;
   color: var(--text-color);
   font-family: var(--font-bold);
   background-color: var(--black-color)
@@ -521,12 +540,18 @@ input{
   font-weight: 800;
 }
 
+.opciones-respuesta button:active label{
+  color:var(--text-color);
+  background-color: var(--black-color);
+}
+
 .btn-enviar{
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .btn-enviar button{
+  margin-bottom: 20px;
   width: 50%;
   height: 60px;
   font-family: var(--body-font);

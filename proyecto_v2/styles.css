@@ -287,6 +287,10 @@ input:checked + .slider:before {
   font-size: 15px;
 }
 
+.name-top a{
+  color: var(--text-color);
+}
+
 .topbar-buttons{
   height: 80px;
   gap: 5px;

@@ -284,10 +284,18 @@ input:checked + .slider:before {
   display: flex;
 }
 
+.profile-icon{
+  padding: 5px;
+}
+
 .name-top{
   text-align: left;
   padding-left: 10px;
   font-size: 15px;
+}
+
+.name-top label{
+  color: gold;
 }
 
 .name-top a{

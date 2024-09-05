@@ -639,6 +639,14 @@ input{
   font-weight: 800;
 }
 
+.opciones-respuesta button:hover label{
+  background-color: var(--black-color);
+  color: var(--text-color);
+  transition: .3s all;
+
+}
+
+
 .opciones-respuesta button:active label{
   color:var(--text-color);
   background-color: var(--black-color);

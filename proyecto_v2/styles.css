@@ -285,7 +285,11 @@ input:checked + .slider:before {
 }
 
 .profile-icon{
-  padding: 5px;
+  text-align: center;
+  padding: 5px 10px;
+  color: var(--black-color);
+  background-color: #bdbdbd;
+  border-radius: 50%;
 }
 
 .name-top{
@@ -300,6 +304,7 @@ input:checked + .slider:before {
 
 .name-top a{
   color: var(--text-color);
+  
 }
 
 .topbar-buttons{

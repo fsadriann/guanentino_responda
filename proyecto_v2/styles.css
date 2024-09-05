@@ -272,6 +272,9 @@ input:checked + .slider:before {
   height: 80px;
   padding: 10px;
   border-radius: 15px;
+  border-width: 1px 1px 5px;
+  border-color: #9c9898;
+  border-style:groove;
   text-align: center;
   color: var(--text-color);
   font-family: 'montserrat';
@@ -302,6 +305,9 @@ input:checked + .slider:before {
   height: 40px;
   width: 120px;
   border-radius: 10px;
+  border-width: 1px 1px 5px;
+  border-color: #9c9898;
+  border-style:groove;
   background-color: var(--black-color);
   font-family: var(--body-font);
   color: var(--text-color);
@@ -311,6 +317,9 @@ input:checked + .slider:before {
   color: var(--text-color);
 }
 
+a{
+  color: var(--text-color);
+}
 
 
 
@@ -328,6 +337,13 @@ input:checked + .slider:before {
 
 .nav__link:hover {
   color: var(--white-color);
+  padding: 5px 8px;
+  border-width: 1px 1px 5px;
+  border-color: #9c9898;
+  border-style:groove;
+  border-radius: 10px;
+  transition: all .3s;
+  background-color: #444;
 }
 
 .home {
@@ -336,7 +352,7 @@ input:checked + .slider:before {
   height: 40px;
   background-color: var(--first-color);
   border-radius: 25%;
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .home-icon {
@@ -349,6 +365,11 @@ input:checked + .slider:before {
   border: 2px solid #240000;
   border-radius: 25%;
   font-size: 1.5rem;
+}
+
+.home-icon:hover{
+  padding: 8px;
+  transition: .3s all;
 }
 
 .body-login{
@@ -565,13 +586,16 @@ input{
 }
 
 .opciones-respuesta button{
-  padding: 15px;
+  padding: 20px;
   display: flex;
   align-items: center;
   text-align: left;
   height: 22.5%;
   border-radius: 25px;
   margin-bottom: 10px;
+  border-width: 1px 1px 5px;
+  border-color: #9c9898;
+  border-style:groove;
   font-size: 15px;
   color: var(--text-color);
   font-family: var(--font-bold);
@@ -582,6 +606,19 @@ input{
   transition: .3s all;
   cursor: pointer;
   background-color: #9c9898;
+  color: var(--black-color);
+  font-weight: 500;
+  transform: translateY(2px);
+  border: 1px solid #333;
+}
+
+.opciones-respuesta button:focus{
+  background-color: #9c9898;
+}
+
+.opciones-respuesta button:focus label{
+  background-color: var(--black-color);
+  color: var(--text-color);
 }
 
 .opciones-respuesta label{
@@ -610,10 +647,27 @@ input{
   height: 60px;
   font-family: var(--body-font);
   color: #115F10;
+  border-width: 1px 1px 5px;
+  border-color: #115F10;
   font-weight: 700;
   font-size: 18px;
   border-radius: 20px;
   background-color: #309C2E;
+}
+
+.btn-enviar button:active{
+  transform: translateY(2px);
+  border: 2px solid #115F10;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.btn-enviar button:hover{
+  border-width: 1px 2px 5px;
+  color: #206b1f;
+  background-color: #3bc039;
+  transition: all .3s;
+  cursor: pointer;
 }
 
 /*=============== BREAKPOINTS ===============*/
@@ -682,4 +736,24 @@ input{
   opacity: 1;
   color: #9c9898;
 }
+
+.btn-intial:hover{
+  background-color: #777777;
+  border: 0;
+  transform: translateY(2px);
+  transition: .3s all;
+}
+
+.btn-intial:hover i{
+  color: #bdbdbd;
+}
+
+.top-nav button:hover{
+  cursor: pointer;
+  transform: translateY(2px);
+  border: 1px solid #333;
+  background-color: hsl(228, 12%, 8%);
+  transition: .3s all;
+}
+
 /* ======= prueba========*/

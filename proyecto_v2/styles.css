@@ -739,7 +739,7 @@ input{
 
 .btn-intial:hover{
   background-color: #777777;
-  border: 0;
+  border: 2px solid #9c9898;
   transform: translateY(2px);
   transition: .3s all;
 }

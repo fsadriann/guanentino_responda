@@ -676,6 +676,15 @@ input{
   background-color: #309C2E;
 }
 
+.btn-enviar button a{
+  color: #115F10;
+}
+
+.btn-enviar button:hover a{
+  color: #206b1f;
+  transition: all .3s;
+}
+
 .btn-enviar button:active{
   transform: translateY(2px);
   border: 2px solid #115F10;
@@ -686,8 +695,8 @@ input{
 .btn-enviar button:hover{
   border-width: 1px 2px 5px;
   color: #206b1f;
-  background-color: #3bc039;
   transition: all .3s;
+  background-color: #3bc039;
   cursor: pointer;
 }
 

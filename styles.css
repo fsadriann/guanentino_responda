@@ -787,3 +787,83 @@ input{
 }
 
 /* ======= prueba========*/
+.bar-chart {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 10px;
+  height: 200px ;
+  width: 100%;
+}
+
+.bar {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-weight: bold ;
+}
+.mat{
+  background-color: rgba(233, 231, 231, 0.877);
+  animation: fillmat 2s forwards;
+  border-radius: 5px;
+  width: 30px;
+}
+.cie{
+  background-color: rgba(233, 231, 231, 0.877);
+  animation: fillcie 2s forwards;
+  border-radius: 5px;
+  width: 30px;
+}
+.soc{
+  background-color: rgba(233, 231, 231, 0.877);
+  animation: fillsoc 2s forwards;
+  border-radius: 5px;
+  width: 30px;
+}
+.ing{
+  background-color: rgba(233, 231, 231, 0.877);
+  animation: filling 2s forwards;
+  border-radius: 5px;
+  width: 30px;
+}
+.esp{
+  background-color: rgba(233, 231, 231, 0.877);
+  animation: fillesp 2s forwards;
+  border-radius: 5px;
+  width: 30px;
+}
+.hr2{
+  width: 55%;
+  height: 5px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  justify-content: center;
+  position: absolute;
+}
+.bar-ctn{
+  width: 30px;
+  background-color: #82888286;
+  border-radius: 5px;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+@keyframes fillmat{
+  0%{height: 10%;}
+  100%{height: 70%;}
+}
+@keyframes fillcie{
+  0%{height: 10%;}
+  100%{height: 40%;}
+}
+@keyframes fillsoc{
+  0%{height: 10%;}
+  100%{height: 60%;}
+}
+@keyframes filling{
+  0%{height: 10%;}
+  100%{height: 80%;}
+}
+@keyframes fillesp{
+  0%{height: 10%;}
+  100%{height: 45%;}
+}

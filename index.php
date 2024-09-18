@@ -12,6 +12,7 @@ require 'database.php';
     <title>Registrarse</title>
     <link rel="stylesheet" href="styles.css">
     <script src="main.js"></script>
+    <link rel="icon" href="img/logo_GR.png">
 </head>
 <body class="body-register">
     <div class="header" style="padding-bottom: 50px;">

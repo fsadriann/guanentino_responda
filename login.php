@@ -15,7 +15,7 @@
         <p>Vamos a iniciar sesión.</p>
     </div>
     <div class="login-form">
-        <form action="login.php" method="post">
+        <form action="loguear.php" method="post">
 
             <input type="text" name="usuario" class="input-field" placeholder="Usuario" autocomplete="off" required>
             

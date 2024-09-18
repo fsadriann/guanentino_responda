@@ -5,6 +5,6 @@ $usuario = "root";
 $clave = "";
 $baseDeDatos = "guanentino";
 
-$enlace = mysqli_connect ($servidor, $usuario, $clave, $baseDeDatos);
+$conexion = mysqli_connect ($servidor, $usuario, $clave, $baseDeDatos);
 
 ?>

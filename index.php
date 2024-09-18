@@ -1,6 +1,6 @@
 <?php
 
-require 'database.php';
+require 'conexion.php';
 
 ?>
 
@@ -56,12 +56,13 @@ if(isset($_POST[ 'registrar' ])){
     $correo = $_POST ['correo'];
     $telefono = $_POST ['telefono'];
     $colegio = $_POST ['colegio'];
-    $clave = password_hash($_POST['clave'], PASSWORD_BCRYPT);
+    $clave = $_POST['clave'];
+    # $clave = password_hash($_POST['clave'], PASSWORD_BCRYPT);
 
 
     $insertarDatos = "INSERT INTO estudiante VALUES('', '1', '$usuario', '$apellido', '$nombre', '$correo', '$telefono', '$colegio', '$clave')";
 
-    $ejecutarInsertar = mysqli_query ($enlace, $insertarDatos);
+    $ejecutarInsertar = mysqli_query ($conexion, $insertarDatos);
 }
 
 

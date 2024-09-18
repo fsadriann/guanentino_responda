@@ -1,14 +1,8 @@
 <?php
 
-$servidor = "localhost";
-$usuario = "root";
-$clave = "";
-$baseDeDatos = "guanentino";
-
-$enlace = mysqli_connect ($servidor, $usuario, $clave, $baseDeDatos);
+require 'database.php';
 
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -25,7 +19,7 @@ $enlace = mysqli_connect ($servidor, $usuario, $clave, $baseDeDatos);
         <p>Vamos a registrarnos.</p>
     </div>
     <div class="login-form">
-        <form action="login.php" method="POST">
+        <form action="index.php" method="POST">
             
             <input type="text" name="usuario"  class="input-field" placeholder="Usuario" autocomplete="off" required>
             
@@ -45,7 +39,7 @@ $enlace = mysqli_connect ($servidor, $usuario, $clave, $baseDeDatos);
             <input type="submit" class="submit-btn" name="registrar" value="Registrarse">
 
         <div class="sign-up-link">
-            <p>¿Ya tienes una cuenta? <a href="index.html" class="login-link">Inicia sesión.</a></p>
+            <p>¿Ya tienes una cuenta? <a href="login.php" class="login-link">Inicia sesión.</a></p>
         </div>
     </form>
     </div>
@@ -61,7 +55,7 @@ if(isset($_POST[ 'registrar' ])){
     $correo = $_POST ['correo'];
     $telefono = $_POST ['telefono'];
     $colegio = $_POST ['colegio'];
-    $clave = $_POST ['clave'];
+    $clave = password_hash($_POST['clave'], PASSWORD_BCRYPT);
 
 
     $insertarDatos = "INSERT INTO estudiante VALUES('', '1', '$usuario', '$apellido', '$nombre', '$correo', '$telefono', '$colegio', '$clave')";

@@ -15,16 +15,14 @@
         <p>Vamos a iniciar sesión.</p>
     </div>
     <div class="login-form">
-        <form action="" method="post">
+        <form action="login.php" method="post">
 
-            <input type="text" id="usuario" name="usuario" class="input-field" placeholder="Usuario" autocomplete="off" required>
+            <input type="text" name="usuario" class="input-field" placeholder="Usuario" autocomplete="off" required>
             
-            <input type="password" id="password" name="password" class="input-field" placeholder="Contraseña" autocomplete="off" required>
+            <input type="password" name="clave" class="input-field" placeholder="Contraseña" autocomplete="off" required>
             
             <input type="submit" class="submit-btn" value="Iniciar sesión" href="home.html">
-            
-            <button class="google-login"><i class="ri-google-fill"></i> Inicia con Google</button>
-            
+                        
             <div class="sign-up-link">
                 <p>¿No tienes una cuenta? <a href="home.html" class="login-link">Regístrate.</a></p>
             </div>

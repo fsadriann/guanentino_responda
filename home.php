@@ -35,65 +35,68 @@
 </head>
 <script src="https://unpkg.com/@barba/core"></script>
 <body class="body-app">
-   <div class="top-nav">
-      <div class="profile">
-         <button>
-            <div class="profile-icon">
-               <i class="fa-solid fa-user"></i>
-            </div>
-         
-            <div class="name-top">
-               <p><a href="profile.html">John Doe</a></p>
-               <label for="#">Top 1</label>
-            </div>
+   <div class="navigation">
 
-
-         </button>
+      <div class="top-nav">
+         <div class="profile">
+            <button>
+               <div class="profile-icon">
+                  <i class="fa-solid fa-user"></i>
+               </div>
+            
+               <div class="name-top">
+                  <p><a href="profile.html">John Doe</a></p>
+                  <label for="#">Top 1</label>
+               </div>
+   
+   
+            </button>
+         </div>
+         <div class="topbar-buttons">
+            <button class="rank-button">
+               <i class="fa-solid fa-fire"></i> <b>5</b>
+            </button>
+            <button class="rank-button">
+               <a href="ranking.html"><i class="fa-solid fa-trophy"></i> <b>280</b></a>
+            </button>
+         </div>
       </div>
-      <div class="topbar-buttons">
-         <button class="rank-button">
-            <i class="fa-solid fa-fire"></i> <b>5</b>
-         </button>
-         <button class="rank-button">
-            <a href="ranking.html"><i class="fa-solid fa-trophy"></i> <b>280</b></a>
-         </button>
-      </div>
+   
+       <nav class="nav">
+           <ul class="nav__list">
+              <li>
+                 <a href="profile.html" class="nav__link active-link">
+                    <i class="ri-user-fill"></i>
+                 </a>
+              </li>
+   
+              <li>
+                 <a href="ranking.html" class="nav__link">
+                    <i class="ri-trophy-fill"></i>
+                 </a>
+              </li>
+   
+              <!-- Expand list -->
+              <li>
+                  <a href="home.html">
+                     <i class="ri-home-7-fill home-icon"></i>
+                  </a>
+               </li>
+           
+              <li>
+                 <a href="questions.html" class="nav__link">
+                    <i class="ri-heart-fill"></i>
+                 </a>
+              </li>
+   
+              <li>
+                 <a href="settings.html" class="nav__link">
+                    <i class="ri-settings-3-fill"></i>
+                 </a>
+              </li>
+           </ul>
+        </nav>
    </div>
-
-    <nav class="nav">
-        <ul class="nav__list">
-           <li>
-              <a href="profile.html" class="nav__link active-link">
-                 <i class="ri-user-fill"></i>
-              </a>
-           </li>
-
-           <li>
-              <a href="ranking.html" class="nav__link">
-                 <i class="ri-trophy-fill"></i>
-              </a>
-           </li>
-
-           <!-- Expand list -->
-           <li>
-               <a href="home.html">
-                  <i class="ri-home-7-fill home-icon"></i>
-               </a>
-            </li>
-        
-           <li>
-              <a href="questions.html" class="nav__link">
-                 <i class="ri-heart-fill"></i>
-              </a>
-           </li>
-
-           <li>
-              <a href="settings.html" class="nav__link">
-                 <i class="ri-settings-3-fill"></i>
-              </a>
-           </li>
-        </ul>
-     </nav>
 
      <!--==================== MAIN ====================-->
      <main class="container">

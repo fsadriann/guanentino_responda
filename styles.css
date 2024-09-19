@@ -234,11 +234,18 @@ input:checked + .slider:before {
   text-align: justify;
 }
 
-/*=============== NAVBAR ===============*/
+/*=============== navegacion del sitio ===============*/
+.navigation{
+  position: fixed;
+  display: flex;
+  width: 30%;
+  background-color: transparent;
+}
+
 .nav {
   position: fixed;
   bottom: .5rem;
-  left: 0;
+  left: .1rem;
   right: 0;
   background-color: var(--black-color);
   width: 88%;
@@ -716,6 +723,17 @@ input{
   .header{
     margin-top: 0;
   }
+
+  .top-nav{
+    width: 30%;
+  }
+
+  .nav{
+    opacity: 0;
+
+  }
+
+
 }
 
 /* For medium devices */
@@ -727,6 +745,24 @@ input{
   .login-form p{
     font-size: 10px;
   }
+
+
+
+  .nav {
+    position: fixed;
+    bottom: .5rem;
+    left: .1rem;
+    right: 0;
+    background-color: var(--black-color);
+    width: 88%;
+    margin-inline: auto;
+    box-shadow: 0 2px 16px hsla(228, 95%, 4%, .1);
+    padding: 1rem 1.75rem;
+    border-radius: 4rem;
+    z-index: var(--z-fixed);
+    
+  }
+
 }
 
 /* For large devices */
@@ -742,9 +778,34 @@ input{
     width: 30%;
   }
 
+  .body-app{
+    display: flex;
+    transition: .3s all;
+  }
+
+  .navigation{
+    background-color: var(--black-color);
+    height: 100vh;
+  }
+
   .header{
     padding-bottom: 10%;
     text-align: center;
+  }
+
+
+  .nav {
+    position: fixed;
+    bottom: .1rem;
+    left: 0;
+    background-color: var(--black-color);
+    width: 30%;
+    margin-inline: auto;
+    box-shadow: 0 2px 16px hsla(228, 95%, 4%, .1);
+    padding: 1rem 1.75rem;
+    border-radius: 4rem;
+    z-index: var(--z-fixed);
+    
   }
 }
 

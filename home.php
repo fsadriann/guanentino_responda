@@ -1,3 +1,26 @@
+<?php
+
+   require 'conexion.php';
+
+   session_start();
+
+   if(isset($_SESSION['usuario']) && isset($_SESSION['id_rol'])){
+
+      $nombre_usuario = $_SESSION['usuario'];
+      if($_SESSION['id_rol'==1])
+      {
+         $rol = 'Estudiante';
+      }
+      else
+      {
+         $rol = 'Administrador';
+      }
+   }
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

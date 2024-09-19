@@ -20,9 +20,9 @@
         // verificar rol
 
         if($resultado['id_rol'] == 1){
-            header("location: .../home.php");
+            header("location: /home.php");
         } else{
-            header("location: .../admin.php");
+            header("location: /admin.php");
         }
     }
     else{

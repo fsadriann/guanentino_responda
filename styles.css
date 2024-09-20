@@ -235,12 +235,6 @@ input:checked + .slider:before {
 }
 
 /*=============== navegacion del sitio ===============*/
-.navigation{
-  position: fixed;
-  display: flex;
-  width: 30%;
-  background-color: transparent;
-}
 
 .nav {
   position: fixed;
@@ -272,6 +266,33 @@ input:checked + .slider:before {
   padding: 15px;
 
 }
+.side-navbar{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  top: 120px;
+  position: fixed;
+  background-color: var(--black-color);
+  width: 28%;
+  height: 80%;
+  border-radius: 15px;
+  padding: 10px;
+  opacity: 0;
+}
+
+.side-navbar li{
+  border-radius: 15px;
+  padding: 20px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 20px ;
+}
+
+.side-navbar i{
+  padding: 5px;
+  font-size: 15px;
+}
+
 
 .profile button{
   background-color: var(--black-color);
@@ -725,7 +746,13 @@ input{
   }
 
   .top-nav{
-    width: 30%;
+    width: 28%;
+    border-radius: 15px;
+    align-items: center;
+  }
+
+  .side-navbar{
+    opacity: 1;
   }
 
   .nav{
@@ -733,6 +760,34 @@ input{
 
   }
 
+  .bt1{
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .bt2{
+    
+  }
+  .bt3{
+    
+  }
+  .bt4{
+    
+  }
+  .bt5{
+    
+  }
+  .bt6{
+    
+  }
+  .bt7{
+    
+  }
+  .bt8{
+    
+  }
+  .bt9{
+    
+  }
 
 }
 
@@ -745,8 +800,6 @@ input{
   .login-form p{
     font-size: 10px;
   }
-
-
 
   .nav {
     position: fixed;
@@ -762,6 +815,7 @@ input{
     z-index: var(--z-fixed);
     
   }
+
 
 }
 
@@ -802,6 +856,8 @@ input{
     z-index: var(--z-fixed);
     
   }
+
+
 }
 
 /*========= BUTTONS ========*/

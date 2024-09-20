@@ -15,6 +15,7 @@ require 'conexion.php';
     <link rel="icon" href="img/logo_GR.png">
 </head>
 <body class="body-register">
+
     <div class="header" style="padding-bottom: 50px;">
         <h1>¿Eres nuevo?</h1>
         <p>Vamos a registrarnos.</p>

@@ -26,7 +26,12 @@
         }
     }
     else{
-        echo "<h1>Usuario o contrasena incorrecta<h1/>";
+        echo 
+     "   <script>
+            alert('Usuario o clave incorrectas, por favor intente de nuevo.');
+            window.location='login.php'
+        </script>";
     }
 
 ?>
+

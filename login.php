@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <link rel="icon" href="img/logo_GR.png">
 
     <script src="main.js"></script>
 </head>
@@ -21,10 +22,10 @@
             
             <input type="password" name="clave" class="input-field" placeholder="Contraseña" autocomplete="off" required>
             
-            <input type="submit" class="submit-btn" value="Iniciar sesión" href="home.html">
+            <input type="submit" class="submit-btn" value="Iniciar sesión">
                         
             <div class="sign-up-link">
-                <p>¿No tienes una cuenta? <a href="home.html" class="login-link">Regístrate.</a></p>
+                <p>¿No tienes una cuenta? <a href="index.php" class="login-link">Regístrate.</a></p>
             </div>
         </form>
     </div>

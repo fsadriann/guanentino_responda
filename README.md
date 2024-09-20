@@ -20,5 +20,8 @@ Especialidad en Sistemas
 
 ---
 
+# Metodología de trabajo
+
+
 # Documentación del proyecto
 

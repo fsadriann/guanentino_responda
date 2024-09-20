@@ -7,14 +7,6 @@
    if(isset($_SESSION['usuario']) && isset($_SESSION['id_rol'])){
 
       $nombre_usuario = $_SESSION['usuario'];
-      if($_SESSION['id_rol'==1])
-      {
-         $rol = '1';
-      }
-      else
-      {
-         $rol = '2';
-      }
    }
 
 ?>
@@ -36,11 +28,6 @@
 </head>
 <script src="https://unpkg.com/@barba/core"></script>
 <body class="body-app">
-
-   <div id="preloader"></div>
-
-
-   <div class="navigation">
 
       <div class="top-nav">
          <div class="profile">
@@ -101,27 +88,25 @@
               </li>
            </ul>
         </nav>
-   </div>
-
      <!--==================== MAIN ====================-->
      <main class="container">
 
         <section class="section" id="home">
-           <button style="margin-left: 20%;margin-top:25%;" class="btn-intial"><a href="math_q.html"><i class="fa-solid fa-calculator"></i></a></button><br>
+           <button style="margin-left: 30%;margin-top:20%;" class="btn-intial"><a href="math_q.html"><i class="fa-solid fa-calculator"></i></a></button><br>
 
-           <button style="margin-left: 40%; margin-top: 1%;" class="btn-intial"><a href="english_q.html"><i class="fa-solid fa-language"></i></a></button><br>
+           <button style="margin-left: 50%; margin-top: 1%;" class="btn-intial"><a href="english_q.html"><i class="fa-solid fa-language"></i></a></button><br>
 
-           <button style="margin-left: 50%; margin-top: 7%;" class="btn-intial"><a href="lectura_q.html"><i class="fa-solid fa-book"></i></a></button><br>
+           <button style="margin-left: 60%; margin-top: 7%;" class="btn-intial"><a href="lectura_q.html"><i class="fa-solid fa-book"></i></a></button><br>
 
-           <button style="margin-left: 40%; margin-top: 7%;" class="btn-intial"><a href="socials_q.html"><i class="fa-solid fa-location-dot"></i></a></button><br>
+           <button style="margin-left: 50%; margin-top: 7%;" class="btn-intial"><a href="socials_q.html"><i class="fa-solid fa-location-dot"></i></a></button><br>
 
-           <button style="margin-top: 7%; margin-left: 25%;" class="btn-intial"><a href="sciences_q.html"><i class="fa-solid fa-flask"></i></a></button><br>
+           <button style="margin-top: 7%; margin-left: 35%;" class="btn-intial"><a href="sciences_q.html"><i class="fa-solid fa-flask"></i></a></button><br>
 
-           <button style="margin-left: 5; margin-top: 7%;" class="btn-intial"><a href="english_q.html"><i class="fa-solid fa-language"></i></a></button><br>
+           <button style="margin-left: 20%; margin-top: 7%;" class="btn-intial"><a href="english_q.html"><i class="fa-solid fa-language"></i></a></button><br>
 
-           <button style="margin-top: 7%; margin-left: 5;" class="btn-intial"><a href="socials_q.html"><i class="fa-solid fa-location-dot"></i></a></button><br>
+           <button style="margin-top: 7%; margin-left: 10%;" class="btn-intial"><a href="socials_q.html"><i class="fa-solid fa-location-dot"></i></a></button><br>
 
-           <button style="margin-left: 26%; margin-top: 7%;" class="btn-intial"><a href="math_q.html"><i class="fa-solid fa-calculator"></i></a></button><br>
+           <button style="margin-left: 25%; margin-top: 7%;" class="btn-intial"><a href="math_q.html"><i class="fa-solid fa-calculator"></i></a></button><br>
 
            <button style="margin-left: 46%; margin-top: 7%;" class="btn-intial"><a href="lectura_q.html"><i class="fa-solid fa-book"></i></a></button><br>
 

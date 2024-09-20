@@ -27,7 +27,7 @@
     }
     else{
         echo 
-     "   <script>
+        "<script>
             alert('Usuario o clave incorrectas, por favor intente de nuevo.');
             window.location='login.php'
         </script>";

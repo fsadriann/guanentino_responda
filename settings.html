@@ -6,9 +6,35 @@
     <title>Guanentino Responda</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
 </head>
-<body class="body-app">
+<body class="body-settings">
+   <div class="top-nav topbar">
+      <div class="profile">
+         <button>
+            <div class="profile-icon">
+               <i class="fa-solid fa-user"></i>
+            </div>
+         
+            <div class="name-top">
+               <p>John Doe</p>
+               <label for="#">Top 1</label>
+            </div>
+
+
+         </button>
+      </div>
+      <div class="topbar-buttons">
+         <button class="rank-button">
+            <i class="fa-solid fa-fire"></i> <b>5</b>
+         </button>
+         <button class="rank-button">
+            <a href="ranking.html"><i class="fa-solid fa-trophy"></i> <b>280</b></a>
+         </button>
+      </div>
+   </div>
 
    <div class="side-navbar">
       <nav>
@@ -25,7 +51,7 @@
                </a>
             </li>
 
-            <li class="active">
+            <li>
                <a href="home.html">
                   <i class="ri-home-7-fill"><b></i>Pagina principal</b>
                </a>
@@ -37,7 +63,7 @@
                </a>
             </li>
 
-            <li>
+            <li class="active">
                <a href="settings.html">
                   <i class="ri-settings-3-fill"><b></i>Ajustes</b>
                </a>
@@ -82,51 +108,26 @@
      </nav>
 
      <!--==================== MAIN ====================-->
-     <main class="container">
-        <section class="settings" id="settings">
+     <main class="container-settings">
+        <section class="settings">
          <h1>Ajustes</h1>
-         <div class="settings-container">
-            <div class="configs">
-               <h1>General</h1>
-               <nav>
-                  <ul class="config_list">
-                     <p>Notificaciones (Sí)
-                     <label class="switch">
-                        <input type="checkbox">
-                        <span class="slider round"></span>
-                     </label>
-                     </p>
-                     <li>
-                        <a href="#">Cuenta</a>
-                     </li>
-
-                     <li>
-                        <a href="#">Sobre las preguntas</a>
-                     </li>
-                  </ul>
-               </nav>
-               
-               <hr>
-
-               <h1>Preguntas</h1>
-
-               <nav>
-                  <ul class="config_list">
-                     <li>
-                        <a href="#">Definir mi horario</a>
-                     </li>
-                     <li>
-                        <a href="#">Consulta el material</a>
-                     </li>
-                     <li>
-                        <a href="#">Estadísticas</a>
-                     </li>
-                  </ul>
-               </nav>
-
+         <h3 class="settings-tile"><i class="fa-solid fa-user"></i> General</h4>
+            <div class="setting-box">
+               <ul>
+                  <a href="#"><li>Hola mundo</li></a>
+                  <a href="#"><li>Hola mundo</li></a>
+                  <a href="#"><li>Hola mundo</li></a>
+               </ul>
             </div>
-         </div>
-        </section>
+
+            <h3 class="settings-tile"><i class="fa-solid fa-user"></i> General</h4>
+               <div class="setting-box">
+                  <ul>
+                     <li>Hola 1</li>
+                     <li>Hola 2</li>
+                  </ul>
+               </div>
+      </section>
      </main>
      
      <!--=============== MAIN JS ===============-->

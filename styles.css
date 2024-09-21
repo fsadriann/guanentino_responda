@@ -56,6 +56,14 @@ html {
   background-attachment: fixed;
 }
 
+.body-settings{
+  font-family: var(--body-font);
+  background-color: var(--black-color);
+  color: var(--text-color);
+  padding: 20px;
+}
+
+
 
 
 ul {
@@ -67,163 +75,52 @@ a {
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
-.container {
-  max-width: 1120px;
-  margin-inline: 1.5rem;
-}
-
-/* Remove the property of 100vh, when inserting its content */
-.section {
-  padding-top: 15%;
-}
 
 .settings{
-  height: 100vh;
-  padding-block: 2.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.settings-container{
-  padding: 25px;
-  margin-top: 10%;
-  background-color: #222;
-  opacity: 1;
-  width: 100%;
-  height: 80%;
-  border-radius: 30px;
-}
-
-.settings-container h2{
-  font-weight: 500;
-}
-
-.settings-container p{
-  font-size: 20px;
-}
-
-.settings-container-mini{
-  margin-top: 7%;
-  background-color: #222;
-  opacity: 1;
-  width: 100%;
-  height: 15%;
-  border-radius: 30px;
-}
-
-.td1{
-  border: 2px solid rgba(165,157,157,0.753);
-  border-radius: 30px 0px 0px 30px;
-}
-
-.td2{
-  border: 2px solid rgba(165,157,157,0.753);
-  border-radius: 0px 30px 30px 0px;
-}
-
-.settings-container-2{
-  margin-top: 5%;
-  background-color: #222;
-  opacity: 1;
-  width: 100%;
-  height: 67%;
-  border-radius: 30px;
-  border: 2px solid rgba(165,157,157,0.753);
+  padding-top: 1.5rem;
+  background-color: var(--black-color);
 }
 
 .settings h1 {
-  font-size: var(--biggest-font-size);
+  font-size: 35px;
+  color: var(--text-color);
+  text-align: center;
+  padding-bottom: 30px;
+}
+.settings-tile{
+  margin-top: 25px;
+  margin-bottom: 15px;
+  color: #bdbdbd;
+}
+
+.setting-box{
+  background-color: #494949;
+  border-radius: 25px;
+}
+
+.setting-box li{
+  padding: 20px;
+  border-radius: 25px;
+}
+.settings h1 {
+  font-size: 35px;
   color: var(--text-color);
   text-align: center;
 }
 
-.settings-container h1{
-  text-align: left;
-  font-weight: 600;
-  font-size: 25px;
-  margin-bottom: 5px;
+.settings li:hover{
+  background-color: #3d3d3d;
+  transition: .2s all ease;
+  border-radius: 25px;
 }
 
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 54px;
-  height: 28px;
-  margin-left: 10px;
-  transform: translateY(-5px);
-}
-
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 20px;
-  width: 20px;
-  left: 4px;
-  bottom: 3px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: #940909;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #940909;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-
-.configs{
-  margin-top: 15px;
-}
-.configs p, li{
+.side-navbar li{
   margin-bottom: 10px;
 }
 
 .config_list a{
   color: var(--text-color);
   font-size: 20px;
-}
-
-.configs hr{
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 
@@ -237,15 +134,18 @@ input:checked + .slider:before {
 
 .nav {
   position: fixed;
+  text-align: center;
   bottom: .5rem;
-  left: .1rem;
+  left: 0;
   right: 0;
   background-color: var(--black-color);
   width: 88%;
   margin-inline: auto;
   box-shadow: 0 2px 16px hsla(228, 95%, 4%, .1);
-  padding: 1rem 1.75rem;
+  padding: 1rem 2rem;
+  padding-top: 1.75rem;
   border-radius: 4rem;
+  border: 1px solid #bdbdbd;
   z-index: var(--z-fixed);
   
 }
@@ -267,6 +167,10 @@ input:checked + .slider:before {
   padding: 15px;
 
 }
+
+
+
+
 .side-navbar{
   display: flex;
   flex-direction: column;
@@ -281,6 +185,11 @@ input:checked + .slider:before {
   padding: 10px;
   opacity: 0;
   gap: 10px;
+}
+
+.topbar{
+  top: -10rem;
+  opacity: 0;
 }
 
 
@@ -776,25 +685,29 @@ input{
 
   .nav{
     opacity: 0;
-
+    bottom: -10rem;
   }
+
+
 
 }
 
 /* For medium devices */
 @media (min-width: 450px){
-  .nav {
-    width: 350px;
-  }
 
   .login-form p{
     font-size: 10px;
   }
 
+  .container-settings{
+    width: 70%;
+    margin-left: 29%;
+  }
+
   .nav {
     position: fixed;
     bottom: .5rem;
-    left: .1rem;
+    left: 0;
     right: 0;
     background-color: var(--black-color);
     width: 88%;
@@ -804,6 +717,20 @@ input{
     border-radius: 4rem;
     z-index: var(--z-fixed);
     
+  }
+
+  .container {
+    max-width: 1120px;
+    margin-inline: 1.5rem;
+  }
+
+  .settings{
+    background-color: none;
+  }
+
+  .topbar{
+    opacity: 1;
+    top: 0;
   }
 
 }

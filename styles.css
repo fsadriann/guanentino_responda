@@ -35,6 +35,7 @@
   }
 }
 
+
 /*=============== BASE ===============*/
 * {
   box-sizing: border-box;
@@ -73,9 +74,7 @@ a {
 
 /* Remove the property of 100vh, when inserting its content */
 .section {
-  height: 100vh;
-  padding-block: 2.5rem;
-  align-items: center;
+  padding-top: 15%;
 }
 
 .settings{
@@ -251,6 +250,8 @@ input:checked + .slider:before {
   
 }
 
+
+
 .top-nav{
   position: fixed;
   display: flex;
@@ -271,6 +272,7 @@ input:checked + .slider:before {
   flex-direction: column;
   align-items: left;
   top: 120px;
+  left: -100%;
   position: fixed;
   background-color: var(--black-color);
   width: 28%;
@@ -278,7 +280,9 @@ input:checked + .slider:before {
   border-radius: 15px;
   padding: 10px;
   opacity: 0;
+  gap: 10px;
 }
+
 
 .side-navbar li{
   border-radius: 15px;
@@ -286,11 +290,17 @@ input:checked + .slider:before {
   width: 100%;
   cursor: pointer;
   font-size: 20px ;
+  background-color: #3a3a3a;
 }
 
 .side-navbar i{
-  padding: 5px;
-  font-size: 15px;
+  padding-right: 20px;
+  font-size: 20px;
+}
+
+.side-navbar li:hover{
+  background-color: #b33c3c;
+  transition: .3s all;
 }
 
 
@@ -728,6 +738,10 @@ input{
   cursor: pointer;
 }
 
+.btn-intial{
+  margin-top: 7%;
+}
+
 /*=============== BREAKPOINTS ===============*/
 
 /* Para sitios de escritorio */
@@ -753,6 +767,7 @@ input{
 
   .side-navbar{
     opacity: 1;
+    left: 0;
   }
 
   .nav{
@@ -760,39 +775,10 @@ input{
 
   }
 
-  .bt1{
-    margin-top: 0;
-    margin-left: 0;
-  }
-  .bt2{
-    
-  }
-  .bt3{
-    
-  }
-  .bt4{
-    
-  }
-  .bt5{
-    
-  }
-  .bt6{
-    
-  }
-  .bt7{
-    
-  }
-  .bt8{
-    
-  }
-  .bt9{
-    
-  }
-
 }
 
 /* For medium devices */
-@media screen and (min-width: 450px){
+@media (min-width: 450px){
   .nav {
     width: 350px;
   }
@@ -816,53 +802,12 @@ input{
     
   }
 
-
-}
-
-/* For large devices */
-@media screen and (min-width: 1150px) {
-  .container {
-    margin-inline: auto;
-  }
- .body-login{
-  padding-top: 30px;
-  }
-
-  .login-form{
-    width: 30%;
-  }
-
-  .body-app{
-    display: flex;
-    transition: .3s all;
-  }
-
-  .header{
-    padding-bottom: 10%;
-    text-align: center;
-  }
-
-
-  .nav {
-    position: fixed;
-    bottom: .1rem;
-    left: 0;
-    background-color: var(--black-color);
-    width: 30%;
-    margin-inline: auto;
-    box-shadow: 0 2px 16px hsla(228, 95%, 4%, .1);
-    padding: 1rem 1.75rem;
-    border-radius: 4rem;
-    z-index: var(--z-fixed);
-    
-  }
-
-
 }
 
 /*========= BUTTONS ========*/
 .btn-intial{
-  margin-left: 14%;
+  margin-left: 0;
+  margin-top: 7%;
   padding: 15px ;
   border-radius: 50%;
   width: 90px;
@@ -888,6 +833,43 @@ input{
 
 .btn-intial:hover i{
   color: #bdbdbd;
+}
+
+
+.bt1{
+  margin-left: 15%;
+}
+
+.bt2{
+  margin-left: 25%;
+}
+
+.bt3{
+  margin-left: 45%;
+}
+
+.bt4{
+  margin-left: 55%;
+}
+
+.bt5{
+  margin-left: 45%;
+}
+
+.bt6{
+  margin-left: 25%;
+}
+
+.bt7{
+  margin-left: 15%;
+}
+
+.bt8{
+  margin-left: 25%;
+}
+
+.bt9{
+  margin-left: 45%;
 }
 
 .top-nav button:hover{
@@ -978,4 +960,92 @@ input{
 @keyframes fillesp{
   0%{height: 10%;}
   100%{height: 45%;}
+}
+
+
+/* For large devices */
+@media (min-width: 1080px) {
+
+
+
+
+  .container {
+    margin-inline: auto;
+  }
+ .body-login{
+  padding-top: 30px;
+  }
+
+  .login-form{
+    width: 30%;
+  }
+
+  .body-app{
+    display: flex;
+    transition: .3s all;
+  }
+
+  .header{
+    padding-bottom: 10%;
+    text-align: center;
+  }
+  .nav {
+    position: fixed;
+    bottom: .1rem;
+    left: 0;
+    background-color: var(--black-color);
+    width: 30%;
+    margin-inline: auto;
+    box-shadow: 0 2px 16px hsla(228, 95%, 4%, .1);
+    padding: 1rem 1.75rem;
+    border-radius: 4rem;
+    z-index: var(--z-fixed);
+    
+  }
+  .btn-intial{
+    margin-top: 30%;
+  }
+
+  .bt1{
+    margin-left: -100%;
+  }
+
+  
+  .bt2{
+    margin-left: 50%;
+    
+  }
+  .bt3{
+    margin-left: 200%;
+    
+  }
+  .bt4{
+    margin-left: 350%;
+    margin-top: 80%;
+
+    
+  }
+  .bt5{
+    margin-left: 400%;
+    margin-top: 100%;
+    
+  }
+  .bt6{
+    margin-left: 350%;
+    margin-top: 100%;
+  }
+  .bt7{
+    margin-left: 200%;
+    
+  }
+  .bt8{
+    margin-left: 50%;
+    
+  }
+  .bt9{
+    margin-left: -100%;
+    
+  }
+
+
 }

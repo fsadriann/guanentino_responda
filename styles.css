@@ -56,6 +56,11 @@ html {
   background-attachment: fixed;
 }
 
+.question{
+  display: flex;
+  flex-direction: column;
+}
+
 .body-settings{
   font-family: var(--body-font);
   background-color: var(--black-color);
@@ -142,10 +147,9 @@ a {
   width: 88%;
   margin-inline: auto;
   box-shadow: 0 2px 16px hsla(228, 95%, 4%, .1);
-  padding: 1rem 2rem;
-  padding-top: 1.75rem;
+  padding: 1rem 1.5rem;
   border-radius: 4rem;
-  border: 1px solid #bdbdbd;
+  border: 1px solid #bdbdbd3f;
   z-index: var(--z-fixed);
   
 }
@@ -585,6 +589,7 @@ input{
   flex-direction: column;
   justify-content: space-around;
   width: 95%;
+  padding: 5px;
 }
 
 .opciones-respuesta button{
@@ -746,6 +751,10 @@ input{
     margin-top: 0;
     width: 70%;
     margin-left: 29%;
+  }
+
+  .container-rank h2{
+    margin-bottom: 20px;
   }
 
   .section{

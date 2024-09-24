@@ -228,6 +228,7 @@ a {
   width: 250px;
   height: 80px;
   padding: 10px;
+  margin-right: 10px;
   border-radius: 15px;
   border-width: 1px 1px 5px;
   border-color: #9c9898;
@@ -273,7 +274,7 @@ a {
 
 .rank-button{
   height: 40px;
-  width: 120px;
+  width: 100px;
   border-radius: 10px;
   border-width: 1px 1px 5px;
   border-color: #9c9898;

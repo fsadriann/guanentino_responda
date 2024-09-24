@@ -56,7 +56,7 @@ html {
   background-attachment: fixed;
 }
 
-.body-profile
+
 
 .question{
   display: flex;
@@ -757,7 +757,13 @@ input{
     margin-left: 29%;
   }
 
-  .body-app{
+  .body-profile{
+    margin-top: 0;
+    width: 70%;
+    margin-left: 29%;
+  }
+
+  .container-profile{
     margin-top: 0;
     width: 70%;
     margin-left: 29%;
@@ -769,8 +775,6 @@ input{
 
   .section{
     margin-top: 0;
-    width: 70%;
-    margin-left: 29%;
     text-align: center;
   }
 

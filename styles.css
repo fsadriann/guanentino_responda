@@ -56,6 +56,13 @@ html {
   background-attachment: fixed;
 }
 
+
+
+.question{
+  display: flex;
+  flex-direction: column;
+}
+
 .body-settings{
   font-family: var(--body-font);
   background-color: var(--black-color);
@@ -142,10 +149,9 @@ a {
   width: 88%;
   margin-inline: auto;
   box-shadow: 0 2px 16px hsla(228, 95%, 4%, .1);
-  padding: 1rem 2rem;
-  padding-top: 1.75rem;
+  padding: 1rem 1.5rem;
   border-radius: 4rem;
-  border: 1px solid #bdbdbd;
+  border: 1px solid #bdbdbd3f;
   z-index: var(--z-fixed);
   
 }
@@ -222,6 +228,7 @@ a {
   width: 250px;
   height: 80px;
   padding: 10px;
+  margin-right: 10px;
   border-radius: 15px;
   border-width: 1px 1px 5px;
   border-color: #9c9898;
@@ -267,7 +274,7 @@ a {
 
 .rank-button{
   height: 40px;
-  width: 120px;
+  width: 100px;
   border-radius: 10px;
   border-width: 1px 1px 5px;
   border-color: #9c9898;
@@ -585,6 +592,7 @@ input{
   flex-direction: column;
   justify-content: space-around;
   width: 95%;
+  padding: 5px;
 }
 
 .opciones-respuesta button{
@@ -742,16 +750,32 @@ input{
     margin-left: 29%;
   }
 
+
+
   .container-rank{
     margin-top: 0;
     width: 70%;
     margin-left: 29%;
   }
 
-  .section{
+  .body-profile{
     margin-top: 0;
     width: 70%;
     margin-left: 29%;
+  }
+
+  .container-profile{
+    margin-top: 0;
+    width: 70%;
+    margin-left: 29%;
+  }
+
+  .container-rank h2{
+    margin-bottom: 20px;
+  }
+
+  .section{
+    margin-top: 0;
     text-align: center;
   }
 

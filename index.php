@@ -25,9 +25,9 @@ require 'conexion.php';
             
             <input type="text" name="usuario"  class="input-field" placeholder="Usuario" autocomplete="off" required>
             
-            <input type="text" name="apellido" class="input-field" placeholder="Apellido" autocomplete="off" required>
-            
             <input type="text" name="nombre" class="input-field" placeholder="Nombre" autocomplete="off" required>
+            
+            <input type="text" name="apellido" class="input-field" placeholder="Apellido" autocomplete="off" required>
             
             <input type="text" name="correo" class="input-field" placeholder="Correo electrónico" autocomplete="off" required>
 
@@ -63,7 +63,7 @@ if(isset($_POST[ 'registrar' ])){
 
     $insertarDatos = "INSERT INTO estudiante VALUES('', '1', '$usuario', '$apellido', '$nombre', '$correo', '$telefono', '$colegio', '$clave')";
 
-    $ejecutarInsertar = mysqli_query ($conexion, $insertarDatos);
+    $ejecutarInsertar = mysqli_query($conexion, $insertarDatos);
 }
 
 

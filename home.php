@@ -37,7 +37,7 @@
                </div>
             
                <div class="name-top">
-                  <p><a href="profile.html">John Doe</a></p>
+                  <p><a href="profile.html"><?php echo ''.$nombre_usuario; ?> </a></p>
                   <label for="#">Top 1</label>
                </div>
    

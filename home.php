@@ -129,23 +129,23 @@
      <main class="container">
 
         <section class="section" id="home">
-           <button class="btn-intial bt1"><a href="math_q.html"><i class="fa-solid fa-calculator"></i></a></button><br>
+           <button class="btn-intial bt1" id="p1"><a href="math_q.html"><i class="fa-solid fa-calculator"></i></a></button><br>
 
-           <button class="btn-intial bt2"><a href="english_q.html"><i class="fa-solid fa-language"></i></a></button><br>
+           <button class="btn-intial bt2" id="p2"><a href="english_q.html"><i class="fa-solid fa-language"></i></a></button><br>
 
-           <button class="btn-intial  bt3"><a href="lectura_q.html"><i class="fa-solid fa-book"></i></a></button><br>
+           <button class="btn-intial  bt3" id="p3"><a href="lectura_q.html"><i class="fa-solid fa-book"></i></a></button><br>
 
-           <button class="btn-intial bt4"><a href="socials_q.html"><i class="fa-solid fa-location-dot"></i></a></button><br>
+           <button class="btn-intial bt4" id="p4"><a href="socials_q.html"><i class="fa-solid fa-location-dot"></i></a></button><br>
 
-           <button class="btn-intial bt5"><a href="sciences_q.html"><i class="fa-solid fa-flask"></i></a></button><br>
+           <button class="btn-intial bt5 " id="p5"><a href="sciences_q.html"><i class="fa-solid fa-flask"></i></a></button><br>
 
-           <button class="btn-intial bt6"><a href="english_q.html"><i class="fa-solid fa-language"></i></a></button><br>
+           <button class="btn-intial bt6" id="p6"><a href="english_q.html"><i class="fa-solid fa-language"></i></a></button><br>
 
-           <button class="btn-intial bt7"><a href="socials_q.html"><i class="fa-solid fa-location-dot"></i></a></button><br>
+           <button class="btn-intial bt7" id="p7"><a href="socials_q.html"><i class="fa-solid fa-location-dot"></i></a></button><br>
 
-           <button class="btn-intial bt8"><a href="math_q.html"><i class="fa-solid fa-calculator"></i></a></button><br>
+           <button class="btn-intial bt8" id="p8"><a href="math_q.html"><i class="fa-solid fa-calculator"></i></a></button><br>
 
-           <button class="btn-intial bt9"><a href="lectura_q.html"><i class="fa-solid fa-book"></i></a></button><br>
+           <button class="btn-intial bt9" id="p9"><a href="lectura_q.html"><i class="fa-solid fa-book"></i></a></button><br>
 
          </section>
      </main>

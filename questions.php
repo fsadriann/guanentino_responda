@@ -1,17 +1,31 @@
+
+<?php
+
+   require 'conexion.php';
+
+   session_start();
+
+   if(isset($_SESSION['usuario']) && isset($_SESSION['id_rol'])){
+
+      $nombre_usuario = $_SESSION['usuario'];
+   }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guanentino Responda</title>
+    <title>GR</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
 </head>
-<body class="body-settings">
-   <div class="top-nav topbar">
+<body class="body-app">
+
+   <div class="top-nav">
       <div class="profile">
          <button>
             <div class="profile-icon">
@@ -19,7 +33,7 @@
             </div>
          
             <div class="name-top">
-               <p>John Doe</p>
+               <p><a href="profile.html"><?php echo ''.$nombre_usuario; ?> </a></p>
                <label for="#">Top 1</label>
             </div>
 
@@ -37,47 +51,47 @@
    </div>
 
    <div class="side-navbar">
-      <nav>
-         <ul>
-            <a href="profile.html">
-               <li>
-                 <i class="ri-user-fill"><b></i>Perfil</b> 
-               </li>
-            </a>
+         <nav>
+            <ul>
+               <a href="profile.php">
+                  <li>
+                    <i class="ri-user-fill"><b></i>Perfil</b> 
+                  </li>
+               </a>
 
-            <a href="ranking.html">
-               <li>
-                  <i class="ri-trophy-fill"><b></i>Liga de trofeos</b>
-               </li>
-            </a>
+               <a href="ranking.php">
+                  <li>
+                     <i class="ri-trophy-fill"><b></i>Liga de trofeos</b>
+                  </li>
+               </a>
 
-            <a href="home.php">
-               <li>
-                  <i class="ri-home-7-fill"><b></i>Pagina principal</b>
-               </li>
-            </a>
+               <a href="home.php">
+                  <li>
+                     <i class="ri-home-7-fill"><b></i>Pagina principal</b>
+                  </li>
+               </a>
 
-            <a href="questions.html">
-               <li>
-                  <i class="ri-heart-fill"><b></i>Practicar</b>
-               </li>
-            </a>
+               <a href="questions.php">
+                  <li class="active">
+                     <i class="ri-heart-fill"><b></i>Practicar</b>
+                  </li>
+               </a>
 
-            <a href="settings.html">
-               <li class="active">
-                  <i class="ri-settings-3-fill"><b></i>Ajustes</b>
-               </li>
-            </a>
+               <a href="settings.php">
+                  <li>
+                     <i class="ri-settings-3-fill"><b></i>Ajustes</b>
+                  </li>
+               </a>
 
-            <a href="logout.php">
-               <li>
-                  <i class="fa-solid fa-right-from-bracket"><b></i>Cerrar sesión</b>
-               </li>
-            </a>
-         </ul>
-      </nav>
-   </div>
-   
+               <a href="logout.php">
+                  <li>
+                     <i class="fa-solid fa-right-from-bracket"><b></i>Cerrar sesión</b>
+                  </li>
+               </a>
+            </ul>
+         </nav>
+      </div>
+
     <nav class="nav">
         <ul class="nav__list">
            <li>
@@ -114,26 +128,11 @@
      </nav>
 
      <!--==================== MAIN ====================-->
-     <main class="container-settings">
-        <section class="settings">
-         <h1>Ajustes</h1>
-         <h3 class="settings-tile"><i class="fa-solid fa-user"></i> General</h4>
-            <div class="setting-box">
-               <ul>
-                  <a href="#"><li>Hola mundo</li></a>
-                  <a href="#"><li>Hola mundo</li></a>
-                  <a href="#"><li>Hola mundo</li></a>
-               </ul>
-            </div>
+     <main class="container">
+        <section class="section" id="questions">
+           <h1>QUESTIONS</h1>
+        </section>
 
-            <h3 class="settings-tile"><i class="fa-solid fa-user"></i> General</h4>
-               <div class="setting-box">
-                  <ul>
-                     <li>Hola 1</li>
-                     <li>Hola 2</li>
-                  </ul>
-               </div>
-      </section>
      </main>
      
      <!--=============== MAIN JS ===============-->

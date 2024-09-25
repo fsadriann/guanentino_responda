@@ -1,3 +1,17 @@
+
+<?php
+
+   require 'conexion.php';
+
+   session_start();
+
+   if(isset($_SESSION['usuario']) && isset($_SESSION['id_rol'])){
+
+      $nombre_usuario = $_SESSION['usuario'];
+   }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +33,7 @@
             </div>
          
             <div class="name-top">
-               <p>John Doe</p>
+               <p><a href="profile.html"><?php echo ''.$nombre_usuario; ?> </a></p>
                <label for="#">Top 1</label>
             </div>
 
@@ -37,46 +51,46 @@
    </div>
 
    <div class="side-navbar">
-      <nav>
-         <ul>
-            <a href="profile.html">
-               <li>
-                 <i class="ri-user-fill"><b></i>Perfil</b> 
-               </li>
-            </a>
+         <nav>
+            <ul>
+               <a href="profile.php">
+                  <li>
+                    <i class="ri-user-fill"><b></i>Perfil</b> 
+                  </li>
+               </a>
 
-            <a href="ranking.html">
-               <li class="active">
-                  <i class="ri-trophy-fill"><b></i>Liga de trofeos</b>
-               </li>
-            </a>
+               <a href="ranking.php">
+                  <li class="active">
+                     <i class="ri-trophy-fill"><b></i>Liga de trofeos</b>
+                  </li>
+               </a>
 
-            <a href="home.php">
-               <li>
-                  <i class="ri-home-7-fill"><b></i>Pagina principal</b>
-               </li>
-            </a>
+               <a href="home.php">
+                  <li>
+                     <i class="ri-home-7-fill"><b></i>Pagina principal</b>
+                  </li>
+               </a>
 
-            <a href="questions.html">
-               <li>
-                  <i class="ri-heart-fill"><b></i>Practicar</b>
-               </li>
-            </a>
+               <a href="questions.php">
+                  <li>
+                     <i class="ri-heart-fill"><b></i>Practicar</b>
+                  </li>
+               </a>
 
-            <a href="settings.html">
-               <li>
-                  <i class="ri-settings-3-fill"><b></i>Ajustes</b>
-               </li>
-            </a>
+               <a href="settings.php">
+                  <li>
+                     <i class="ri-settings-3-fill"><b></i>Ajustes</b>
+                  </li>
+               </a>
 
-            <a href="logout.php">
-               <li>
-                  <i class="fa-solid fa-right-from-bracket"><b></i>Cerrar sesión</b>
-               </li>
-            </a>
-         </ul>
-      </nav>
-   </div>
+               <a href="logout.php">
+                  <li>
+                     <i class="fa-solid fa-right-from-bracket"><b></i>Cerrar sesión</b>
+                  </li>
+               </a>
+            </ul>
+         </nav>
+      </div>
 
     <nav class="nav">
         <ul class="nav__list">

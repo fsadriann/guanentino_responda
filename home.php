@@ -56,13 +56,13 @@
       <div class="side-navbar">
          <nav>
             <ul>
-               <a href="profile.html">
+               <a href="profile.php">
                   <li>
                     <i class="ri-user-fill"><b></i>Perfil</b> 
                   </li>
                </a>
 
-               <a href="ranking.html">
+               <a href="ranking.php">
                   <li>
                      <i class="ri-trophy-fill"><b></i>Liga de trofeos</b>
                   </li>
@@ -74,13 +74,13 @@
                   </li>
                </a>
 
-               <a href="questions.html">
+               <a href="questions.php">
                   <li>
                      <i class="ri-heart-fill"><b></i>Practicar</b>
                   </li>
                </a>
 
-               <a href="settings.html">
+               <a href="settings.php">
                   <li>
                      <i class="ri-settings-3-fill"><b></i>Ajustes</b>
                   </li>

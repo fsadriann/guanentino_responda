@@ -391,6 +391,12 @@ input{
   transition: .3s;
 }
 
+.submit-btn:hover{
+  background-color: #ccc;
+  color: var(--black-color);
+  transition: .3s all;
+}
+
 
 .google-login{
   width: 100%;

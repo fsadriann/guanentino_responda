@@ -56,35 +56,41 @@
       <div class="side-navbar">
          <nav>
             <ul>
-               <li>
-                  <a href="profile.html">
+               <a href="profile.html">
+                  <li>
                     <i class="ri-user-fill"><b></i>Perfil</b> 
-                  </a>
-               </li>
+                  </li>
+               </a>
 
-               <li>
-                  <a href="ranking.html">
+               <a href="ranking.html">
+                  <li>
                      <i class="ri-trophy-fill"><b></i>Liga de trofeos</b>
-                  </a>
-               </li>
+                  </li>
+               </a>
 
-               <li class="active">
-                  <a href="home.html">
+               <a href="home.php">
+                  <li class="active">
                      <i class="ri-home-7-fill"><b></i>Pagina principal</b>
-                  </a>
-               </li>
+                  </li>
+               </a>
 
-               <li>
-                  <a href="questions.html">
+               <a href="questions.html">
+                  <li>
                      <i class="ri-heart-fill"><b></i>Practicar</b>
-                  </a>
-               </li>
+                  </li>
+               </a>
 
-               <li>
-                  <a href="settings.html">
+               <a href="settings.html">
+                  <li>
                      <i class="ri-settings-3-fill"><b></i>Ajustes</b>
-                  </a>
-               </li>
+                  </li>
+               </a>
+
+               <a href="logout.php">
+                  <li>
+                     <i class="fa-solid fa-right-from-bracket"><b></i>Cerrar sesión</b>
+                  </li>
+               </a>
             </ul>
          </nav>
       </div>

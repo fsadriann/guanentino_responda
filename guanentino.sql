@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 04-09-2024 a las 03:16:30
+-- Tiempo de generación: 28-09-2024 a las 03:51:47
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `administrador` (
   `id_administrador` int(11) NOT NULL,
   `id_rol` int(11) NOT NULL,
-  `nombre` varchar(50) NOT NULL,
+  `usuario` varchar(50) NOT NULL,
   `correo` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -39,8 +39,8 @@ CREATE TABLE `administrador` (
 -- Volcado de datos para la tabla `administrador`
 --
 
-INSERT INTO `administrador` (`id_administrador`, `id_rol`, `nombre`, `correo`, `password`) VALUES
-(1, 2, 'Manuel', 'manu@colegioguanenta.edu.co', '12345');
+INSERT INTO `administrador` (`id_administrador`, `id_rol`, `usuario`, `correo`, `password`) VALUES
+(1, 2, 'npaez', 'npaez@colegioguanenta.edu.co', '123');
 
 -- --------------------------------------------------------
 
@@ -70,23 +70,23 @@ INSERT INTO `estado_pregunta` (`id_estado_p`, `correcto`, `incorrecto`) VALUES
 CREATE TABLE `estudiante` (
   `id_estudiante` int(11) NOT NULL,
   `id_rol` int(11) NOT NULL,
-  `doc_identidad` varchar(50) NOT NULL,
+  `usuario` varchar(20) NOT NULL,
   `apellido` varchar(50) NOT NULL,
   `nombre` varchar(50) NOT NULL,
-  `fecha_nacimiento` date NOT NULL COMMENT '0000-00-00',
   `correo` varchar(50) NOT NULL COMMENT '@',
-  `celular` varchar(50) NOT NULL,
-  `ciudad` varchar(50) NOT NULL,
+  `telefono` varchar(50) NOT NULL,
   `colegio` varchar(50) NOT NULL,
-  `contraseña` varchar(50) NOT NULL
+  `clave` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `estudiante`
 --
 
-INSERT INTO `estudiante` (`id_estudiante`, `id_rol`, `doc_identidad`, `apellido`, `nombre`, `fecha_nacimiento`, `correo`, `celular`, `ciudad`, `colegio`, `contraseña`) VALUES
-(1, 1, '1100560411', 'gomes', 'juan', '2014-04-25', 'juan34@gmail.com', '3125797668', 'SanGil', 'Colegio Guanenta', '1234');
+INSERT INTO `estudiante` (`id_estudiante`, `id_rol`, `usuario`, `apellido`, `nombre`, `correo`, `telefono`, `colegio`, `clave`) VALUES
+(1, 1, 'adrxn22', 'Forero', 'Adrian', 'adrianforero@colegioguanenta.edu.co', '3103385650', 'Colegio Guanenta', '1234'),
+(20, 1, 'Spottebard', 'Cediel', 'David', 'davidcediel@colegioguanenta.edu.co', '3168535859', 'Colegio Guanenta', '1234'),
+(21, 1, 'aaa', 'aaaa', 'aaa', 'aaa', 'aaa', 'aaa', 'aaa');
 
 -- --------------------------------------------------------
 
@@ -260,7 +260,7 @@ ALTER TABLE `estado_pregunta`
 -- AUTO_INCREMENT de la tabla `estudiante`
 --
 ALTER TABLE `estudiante`
-  MODIFY `id_estudiante` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_estudiante` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT de la tabla `estudiante_pregunta`

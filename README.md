@@ -22,6 +22,12 @@ Especialidad en Sistemas
 
 # Metodología de trabajo
 
+para nuestra metodología de trabajo optamos hacer uso del método scrum, pero ¿Qué es la metodología scrum?
+
+## Metodología scrum
+Scrum es un marco de gestión de proyectos ágil que ayuda a los equipos a estructurar y gestionar su trabajo a través de un conjunto de valores, principios y prácticas. Al igual que un equipo de rugby (de donde recibe su nombre) que se entrena para el gran partido, el scrum anima a los equipos a aprender a través de las experiencias, a organizarse mientras trabajan en un problema y a reflexionar sobre sus victorias y derrotas para mejorar continuamente.
+
+Si bien el scrum lo utilizan con más frecuencia los equipos de desarrollo de software, sus principios y lecciones se pueden aplicar a todo tipo de trabajo en equipo. Esta es una de las razones por las que el scrum es tan popular. Considerado a menudo como un marco ágil de gestión de proyectos, scrum describe un conjunto de reuniones, herramientas y funciones que funcionan en conjunto para ayudar a los equipos a estructurar y gestionar su trabajo.
 
 # Documentación del proyecto
 

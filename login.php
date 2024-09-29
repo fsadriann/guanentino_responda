@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
-    <link rel="icon" href="img/logo_GR.png">
+    <link rel="icon" href="img/logo.png">
 
     <script src="main.js"></script>
 </head>

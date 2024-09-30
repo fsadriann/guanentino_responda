@@ -377,6 +377,7 @@ input{
   font-family: var(--body-font);
 }
 
+
 .submit-btn{
   width: 100%;
   height: 50px;
@@ -601,63 +602,84 @@ input{
   padding: 5px;
 }
 
-.opciones-respuesta button{
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  text-align: left;
-  height: 22.5%;
-  border-radius: 25px;
-  margin-bottom: 10px;
-  border-width: 1px 1px 5px;
-  border-color: #9c9898;
-  border-style:groove;
-  font-size: 15px;
-  color: var(--text-color);
-  font-family: var(--font-bold);
-  background-color: var(--black-color)
+
+.opciones-respuesta input[type="radio"]{
+  display: none;
 }
 
-.opciones-respuesta button:hover{
-  transition: .3s all;
+.radio-btn{
+  width: 20px;
+  height: 20px;
+  border: #9c9898 5px solid;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
   cursor: pointer;
-  background-color: #9c9898;
-  color: var(--black-color);
-  font-weight: 500;
-  transform: translateY(2px);
-  border: 1px solid #333;
 }
 
-.opciones-respuesta button:focus{
-  background-color: #9c9898;
+.radio-btn::after{
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  background-color: var(--text-color);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
 }
 
-.opciones-respuesta button:focus label{
-  background-color: var(--black-color);
-  color: var(--text-color);
+.opciones-respuesta input:checked + label .radio-btn::after{
+  opacity: 1;
+  transition: all .3s;
+  width: 16px;
+  height: 16px;
+}
+
+.opciones-respuesta input:checked + label .radio-btn{
+  border-color: var(--black-color);
+  border-width: 6px;
+  transition: .3s ease;
 }
 
 .opciones-respuesta label{
-  background-color: #ccc;
-  margin-right: 10px;
-  padding: 13px 20px;
-  font-size: 30px;
-  border-radius: 50%;
-  color: var(--black-color);
-  font-weight: 800;
-}
-
-.opciones-respuesta button:hover label{
-  background-color: var(--black-color);
   color: var(--text-color);
-  transition: .3s all;
+  background: rgba(0, 0, 0, .1);
+  border-width: 1px 1px 5px;
+  border-color: #9c9898;
+  border-style: groove;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  font-weight: 700;
+  width: 100%;
+  height: 22.5%;
+  padding: 20px 15px 20px;
+  display: flex;
+  gap: 15px;
+  position: relative;
+  font-size: 1em;
+  cursor: pointer;
+}
 
+.opciones-respuesta label:hover{
+  transition: .3s all;
+  background-color: #9c9898;
+  color: var(--black-color);
+  border-color: var(--black-color);
+}
+
+.opciones-respuesta input:hover + label .radio-btn{
+  border-color: var(--black-color);
 }
 
 
-.opciones-respuesta button:active label{
-  color:var(--text-color);
-  background-color: var(--black-color);
+.opciones-respuesta input[type="radio"]:checked + label{
+  background: #9c9898;
+  color: var(--black-color);
+  transform: translateY(2px);
+  border: 1px solid #333;
+  transition: .3s all;
 }
 
 .btn-enviar{
@@ -665,7 +687,7 @@ input{
   align-items: center;
   justify-content: center;
 }
-.btn-enviar button{
+.btn-enviar input{
   margin-bottom: 20px;
   width: 50%;
   height: 60px;
@@ -679,23 +701,23 @@ input{
   background-color: #309C2E;
 }
 
-.btn-enviar button a{
+.btn-enviar input a{
   color: #115F10;
 }
 
-.btn-enviar button:hover a{
+.btn-enviar input:hover a{
   color: #206b1f;
   transition: all .3s;
 }
 
-.btn-enviar button:active{
+.btn-enviar input:active{
   transform: translateY(2px);
   border: 2px solid #115F10;
   cursor: pointer;
   transition: all .3s;
 }
 
-.btn-enviar button:hover{
+.btn-enviar input:hover{
   border-width: 1px 2px 5px;
   color: #206b1f;
   transition: all .3s;

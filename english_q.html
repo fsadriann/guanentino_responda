@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>¡Respondamos Inglés!</title>
+    <script src="main.js"></script>
 </head>
 <body class="body-app question">
     <div class="question-container">
@@ -45,36 +46,24 @@
                 <br>
             <p>John Humphrey Noyes travelled to New York State</p>
         </div>
-        <div class="opciones-respuesta">
-            <button>
-                <div class="label-opcion">
-                    <label>A</label>
-                </div>
-                <div class="enunciado">
-                    <p>to visit his family.</p>
-                </div>
-            </button>
-            <button>
-                <div class="label-opcion">
-                    <label>B</label>
-                </div>
-                <div class="enunciado">
-                    <p>to change his way of life.</p>
-                </div>
-            </button>
-            <button>
-                <div class="label-opcion">
-                    <label>C</label>
-                </div>
-                <div class="enunciado">
-                    <p>to know more about his country.</p>
-                </div>
-            </button>
-        </div>
+        <form class="opciones-respuesta">
+            <div>
+                <input type="radio" name="opt-respuesta" id="optionA">
+                <label for="optionA"><span class="radio-btn"></span>To visit his family</label>
+            </div>
+            <div>
+                <input type="radio" name="opt-respuesta" id="optionB">
+                <label for="optionB"><span class="radio-btn"></span>To change his way of life</label>
+            </div>
+            <div>
+                <input type="radio" name="opt-respuesta" id="optionC">
+                <label for="optionC"><span class="radio-btn"></span> to know more about his country</label>
+            </div>
+        </form>
 
     </div>
-    <div class="btn-enviar">
-        <button><a href="home.html">Enviar respuesta</a></button>
-    </div>
+    <form class="btn-enviar" action="enviar-rta.php">
+        <input type="submit" value="Enviar respuesta">
+    </form>
 </body>
 </html>

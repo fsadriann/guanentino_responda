@@ -443,6 +443,9 @@ input{
   font-weight: 600;
 }
 
+.profile button:hover{
+  cursor: pointer;
+}
 
 .input-field{
   width: 100%;
@@ -573,7 +576,7 @@ input{
 
 .container-enunciado{
   width: 95%;
-  height:20%;
+  height: 20%;
   max-height: 400px;
   background-color: var(--white-color);
   border-radius: 20px;
@@ -594,7 +597,7 @@ input{
 }
 
 .opciones-respuesta{
-  margin-top: 15px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -610,8 +613,10 @@ input{
 .radio-btn{
   width: 20px;
   height: 20px;
+  margin: 5px;
   border: #9c9898 5px solid;
-  display: inline-block;
+  padding: 5px;
+  display: flex;
   border-radius: 50%;
   position: relative;
   cursor: pointer;
@@ -620,6 +625,8 @@ input{
 .radio-btn::after{
   content: "";
   position: absolute;
+  display: flex;
+  align-items: center;
   height: 12px;
   width: 12px;
   background-color: var(--text-color);
@@ -643,42 +650,51 @@ input{
   transition: .3s ease;
 }
 
+
+
 .opciones-respuesta label{
   color: var(--text-color);
-  background: rgba(0, 0, 0, .1);
   border-width: 1px 1px 5px;
   border-color: #9c9898;
   border-style: groove;
   margin-bottom: 10px;
   border-radius: 20px;
-  font-weight: 700;
+  font-weight: 600;
   width: 100%;
-  height: 22.5%;
-  padding: 20px 15px 20px;
+  padding: 20px 15px 20px 20px;
   display: flex;
+  align-items: center;
   gap: 15px;
   position: relative;
-  font-size: 1em;
+  font-size: 12px;
   cursor: pointer;
 }
 
 .opciones-respuesta label:hover{
   transition: .3s all;
-  background-color: #9c9898;
-  color: var(--black-color);
-  border-color: var(--black-color);
+  background-color: hsl(225, 12%, 12%);
+  color: var(--text-color);
+  border-color: var(--text-color);
 }
 
 .opciones-respuesta input:hover + label .radio-btn{
-  border-color: var(--black-color);
+  border-color: #635c5c;
+  transition: all .3s;
 }
 
+.question-header h1{
+  font-size: 25px;
+}
+
+.question-header i{
+  font-size: 25px;
+  margin-left: 10px;
+}
 
 .opciones-respuesta input[type="radio"]:checked + label{
   background: #9c9898;
   color: var(--black-color);
-  transform: translateY(2px);
-  border: 1px solid #333;
+  border: 3px solid #5f5f5f;
   transition: .3s all;
 }
 
@@ -686,6 +702,7 @@ input{
   display: flex;
   align-items: center;
   justify-content: center;
+  bottom: 0;
 }
 .btn-enviar input{
   margin-bottom: 20px;
@@ -773,12 +790,18 @@ input{
     font-size: 10px;
   }
 
+  .question-header h1{
+    font-size: 35px;
+  }
+
   .container-settings{
     width: 70%;
     margin-left: 29%;
   }
 
-
+  .btn-enviar{
+    margin-top: 0;
+  }
 
   .container-rank{
     margin-top: 0;
@@ -803,7 +826,6 @@ input{
   }
 
   .section{
-    margin-top: 0;
     text-align: center;
   }
 
@@ -880,6 +902,7 @@ input{
 
 .bt1{
   margin-left: 15%;
+  margin-top: 30%;
 }
 
 .bt2{

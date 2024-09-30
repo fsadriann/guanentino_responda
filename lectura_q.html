@@ -13,7 +13,7 @@
     <div class="question-container">
 
         <div class="question-header">
-            <a href="home.html"><i class="fa-solid fa-chevron-left"></i></a>
+            <a href="home.php"><i class="fa-solid fa-chevron-left"></i></a>
             <h1>Lectura Crítica</h1>
         </div>
         <div class="container-enunciado">
@@ -38,43 +38,28 @@
             </p>
             
         </div>
-        <div class="opciones-respuesta">
-            <button>
-                <div class="label-opcion">
-                    <label>A</label>
-                </div>
-                <div class="enunciado">
-                    <p>probar que no hay certeza sobre la existencia de la mente.</p>
-                </div>
-            </button>
-            <button>
-                <div class="label-opcion">
-                    <label>B</label>
-                </div>
-                <div class="enunciado">
-                    <p>señalar que no hay certeza de la existencia de la tierra.</p>
-                </div>
-            </button>
-            <button>
-                <div class="label-opcion">
-                    <label>C</label>
-                </div>
-                <div class="enunciado">
-                    <p>mostrar que es posible equivocarse en un juicio.</p>
-                </div>            </button>
-            <button>
-                <div class="label-opcion">
-                    <label>D</label>
-                </div>
-                <div class="enunciado">
-                    <p>demostrar la existencia de quien juzga.</p>
-                </div>            
-            </button>
-        </div>
+        <form class="opciones-respuesta">
+            <div>
+                <input type="radio" name="opt-respuesta" id="optionA">
+                <label for="optionA"><span class="radio-btn"></span>probar que no hay certeza sobre la existencia de la mente.</label>
+            </div>
+            <div>
+                <input type="radio" name="opt-respuesta" id="optionB">
+                <label for="optionB"><span class="radio-btn"></span>señalar que no hay certeza de la existencia de la tierra.</label>
+            </div>
+            <div>
+                <input type="radio" name="opt-respuesta" id="optionC">
+                <label for="optionC"><span class="radio-btn"></span>mostrar que es posible equivocarse en un juicio.</label>
+            </div>
+            <div>
+                <input type="radio" name="opt-respuesta" id="optionD">
+                <label for="optionD"><span class="radio-btn"></span>demostrar la existencia de quien juzga.</label>
+            </div>
+        </form>
 
     </div>
-    <div class="btn-enviar">
-        <button><a href="home.html">Enviar respuesta</a></button>
-    </div>
+    <form class="btn-enviar" action="enviar-rta.php">
+        <input type="submit" value="Enviar respuesta">
+    </form>
 </body>
 </html>

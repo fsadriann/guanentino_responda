@@ -12,7 +12,7 @@
 <body class="body-app question">
     <div class="question-container">
         <div class="question-header">
-            <a href="home.html"><i class="fa-solid fa-chevron-left"></i></a>
+            <a href="home.php"><i class="fa-solid fa-chevron-left"></i></a>
             <h1>Ciencias Naturales</h1>
         </div>
         <div class="container-enunciado">
@@ -24,52 +24,28 @@
                 investigación?
             </p>
         </div>
-        <div class="opciones-respuesta">
-            <button>
-                <div class="label-opcion">
-                    <label>A</label>
-                </div>
-                <div class="enunciado">
-                    <p>
-                        Colocar en un medio de cultivo, con un pH neutro y temperatura constante de 18 °C, un grupo de este protozoo y contar, a intervalos de 1 hora durante 8 horas, el número de protozoos
-                    </p>
-                </div>
-            </button>
-            <button>
-                <div class="label-opcion">
-                    <label>B</label>
-                </div>
-                <div class="enunciado">
-                    <p>
-                        Colocar en cinco medios de cultivo a una misma temperatura, con las otras condiciones iguales, grupos de este protozoo y al cabo de 8 horas contar el número de protozoos en cada medio
-                    </p>
-                </div>
-            </button>
-            <button>
-                <div class="label-opcion">
-                    <label>C</label>
-                </div>
-                <div class="enunciado">
-                    <p>
-                        Colocar en cinco medios de cultivo, con diferentes valores de pH y temperatura constante de 18 °C, grupos de este protozoo y contar a intervalos de 1 hora por 8 horas el número de protozoos
-                    </p>
-                </div>
-            </button>
-            <button>
-                <div class="label-opcion">
-                    <label>D</label>
-                </div>
-                <div class="enunciado">
-                    <p>
-                        Colocar en cinco medios de cultivo a diferentes temperaturas, con las otras condiciones iguales, grupos de este protozoo y al cabo de 8 horas contar el número de protozoos en cada medio
-                    </p>
-                </div>            
-            </button>
-        </div>
+        <form class="opciones-respuesta">
+            <div>
+                <input type="radio" name="opt-respuesta" id="optionA">
+                <label for="optionA"><span class="radio-btn"></span>Colocar en un medio de cultivo, con un pH neutro y temperatura constante de 18 °C, un grupo de este protozoo y contar, a intervalos de 1 hora durante 8 horas, el número de protozoos</label>
+            </div>
+            <div>
+                <input type="radio" name="opt-respuesta" id="optionB">
+                <label for="optionB"><span class="radio-btn"></span>Colocar en cinco medios de cultivo a una misma temperatura, con las otras condiciones iguales, grupos de este protozoo y al cabo de 8 horas contar el número de protozoos en cada medio</label>
+            </div>
+            <div>
+                <input type="radio" name="opt-respuesta" id="optionC">
+                <label for="optionC"><span class="radio-btn"></span>Colocar en cinco medios de cultivo, con diferentes valores de pH y temperatura constante de 18 °C, grupos de este protozoo y contar a intervalos de 1 hora por 8 horas el número de protozoos</label>
+            </div>
+            <div>
+                <input type="radio" name="opt-respuesta" id="optionD">
+                <label for="optionD"><span class="radio-btn"></span>Colocar en cinco medios de cultivo a diferentes temperaturas, con las otras condiciones iguales, grupos de este protozoo y al cabo de 8 horas contar el número de protozoos en cada medio</label>
+            </div>
+        </form>
 
     </div>
-    <div class="btn-enviar">
-        <button><a href="home.html">Enviar respuesta</a></button>
-    </div>
+    <form class="btn-enviar" action="enviar-rta.php">
+        <input type="submit" value="Enviar respuesta">
+    </form>
 </body>
 </html>

@@ -12,7 +12,7 @@ require 'conexion.php';
     <title>Registrarse</title>
     <link rel="stylesheet" href="styles.css">
     <script src="main.js"></script>
-    <link rel="icon" href="img/logo.png">
+    <link rel="icon" href="img/logo-redondo.png">
 </head>
 <body class="body-register">
 

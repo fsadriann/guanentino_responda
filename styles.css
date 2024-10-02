@@ -669,7 +669,7 @@ input{
 
 .opciones-respuesta label{
   color: var(--text-color);
-  border-width: 1px 1px 5px;
+  border-width: 5px;
   border-color: #9c9898;
   border-style: groove;
   margin-bottom: 10px;
@@ -964,6 +964,11 @@ input{
   margin-left: 45%;
 }
 
+.bt10{
+  margin-right: 45%;
+}
+
+
 .top-nav button:hover{
   cursor: pointer;
   transform: translateY(2px);
@@ -1139,5 +1144,28 @@ input{
     
   }
 
+  .bt10{
+    margin-left: -200%;
+    margin-top: 80%;
+  }
+
+  .bt11{
+    margin-left: -100%;
+    margin-top: 80%;
+  }
+
+  .bt12{
+    margin-left: 50%;
+    
+  }
+  
+  .bt13{
+    margin-left: 200%;
+  }
+
+  .bt14{
+    margin-left: 350%;
+    margin-top: 100%;
+  }
 
 }

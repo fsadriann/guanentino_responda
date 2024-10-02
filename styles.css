@@ -669,9 +669,7 @@ input{
 
 .opciones-respuesta label{
   color: var(--text-color);
-  border-width: 5px;
-  border-color: #9c9898;
-  border-style: groove;
+  border: 4px #9c9898 solid ;
   margin-bottom: 10px;
   border-radius: 20px;
   font-weight: 600;

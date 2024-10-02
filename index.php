@@ -1,71 +1,33 @@
-<?php
-
-require 'conexion.php';
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrarse</title>
+    <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
     <link rel="icon" href="img/logo-redondo.png">
-</head>
-<body class="body-register">
 
+    <script src="main.js"></script>
+</head>
+<body class="body-login">
     <div class="header" style="padding-bottom: 50px;">
-        <h1>¿Eres nuevo?</h1>
-        <p>Vamos a registrarnos.</p>
+        <h1>Bienvenido!</h1>
+        <p>Vamos a iniciar sesión.</p>
     </div>
     <div class="login-form">
-        <form action="index.php" method="POST">
-            
-            <input type="text" name="usuario"  class="input-field" placeholder="Usuario" autocomplete="off" required>
-            
-            <input type="text" name="nombre" class="input-field" placeholder="Nombre" autocomplete="off" required>
-            
-            <input type="text" name="apellido" class="input-field" placeholder="Apellido" autocomplete="off" required>
-            
-            <input type="text" name="correo" class="input-field" placeholder="Correo electrónico" autocomplete="off" required>
+        <form action="loguear.php" method="post">
 
-            <input type="text" name="telefono" class="input-field" placeholder="Numero de telefono" autocomplete="off" required>
-
-            
-            <input type="text" name="colegio" class="input-field" placeholder="Institución Educativa" autocomplete="off" required>
+            <input type="text" name="usuario" class="input-field" placeholder="Usuario" autocomplete="off" required>
             
             <input type="password" name="clave" class="input-field" placeholder="Contraseña" autocomplete="off" required>
             
-            <input type="submit" class="submit-btn" name="registrar" value="Registrarse">
-
-        <div class="sign-up-link">
-            <p>¿Ya tienes una cuenta? <a href="login.php" class="login-link">Inicia sesión.</a></p>
-        </div>
-    </form>
+            <input type="submit" class="submit-btn" value="Iniciar sesión">
+                        
+            <div class="sign-up-link">
+                <p>¿No tienes una cuenta? <a href="register.php" class="login-link">Regístrate.</a></p>
+            </div>
+        </form>
     </div>
 </body>
 </html>
-
-<?php
-
-if(isset($_POST[ 'registrar' ])){
-    $usuario = $_POST ['usuario'];
-    $apellido = $_POST ['apellido'];
-    $nombre = $_POST ['nombre'];
-    $correo = $_POST ['correo'];
-    $telefono = $_POST ['telefono'];
-    $colegio = $_POST ['colegio'];
-    $clave = $_POST['clave'];
-    # $clave = password_hash($_POST['clave'], PASSWORD_BCRYPT);
-
-
-    $insertarDatos = "INSERT INTO estudiante VALUES('', '1', '$usuario', '$apellido', '$nombre', '$correo', '$telefono', '$colegio', '$clave')";
-
-    $ejecutarInsertar = mysqli_query($conexion, $insertarDatos);
-}
-
-
-
-?>

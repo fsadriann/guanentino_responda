@@ -760,6 +760,8 @@ input{
   margin-top: 7%;
 }
 
+
+
 /*=============== BREAKPOINTS ===============*/
 
 /* Para sitios de escritorio */
@@ -903,9 +905,8 @@ input{
   height: 90px;
   background-color: var(--button-color);
   cursor: pointer;
-  border-width: 0px 0px 5px;
+  border-width: 1px 0px 6px;
   border-color: #9c9898;
-  border-style:groove;
 }
 .btn-intial i{
   font-size: 45px;
@@ -924,6 +925,48 @@ input{
   color: #bdbdbd;
 }
 
+
+button.correct{
+  background-color: #56c039;
+  border-color: #267b2d;
+}
+
+button.correct i{
+  color: var(--text-color);
+}
+
+button.correct:hover{
+  background-color: #267b37;
+  border-color: #267b45;
+}
+
+button.mid{
+  background-color: #3971c0;
+  border-color: #26497b;
+}
+
+button.mid i{
+  color: var(--text-color);
+}
+
+button.mid:hover{
+  background-color: #26497b;
+  border-color: #26497b;
+}
+
+button.incorrect{
+  background-color: #c0bc39;
+  border-color: #697b26;
+}
+
+button.incorrect i{
+  color: var(--text-color);
+}
+
+button.incorrect:hover{
+  background-color: #6b7b26;
+  border-color: #7b7226;
+}
 
 .bt1{
   margin-left: 15%;

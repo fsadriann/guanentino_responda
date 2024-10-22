@@ -2,6 +2,7 @@
 
 require 'conexion.php';
 
+
 if(isset($_POST[ 'registrar' ])) {
     $usuario = $_POST ['usuario'];
     $nombre = $_POST ['nombre'];
@@ -21,17 +22,15 @@ if(isset($_POST[ 'registrar' ])) {
     {
         echo '<script type="text/javascript">
                 alert("Registro Exitoso");
-                window.location.href="index.php";
+                window.location.href="register.php";
             </script>';
     }else{
         echo '<script type="text/javascript">
                 alert("Ha ocurrido un error...");
-                window.location.href="index.php";
+                window.location.href="register.php";
             </script>';
     }
 }
-
-
 ?>
 
 <!DOCTYPE html>
@@ -50,23 +49,29 @@ if(isset($_POST[ 'registrar' ])) {
         <h1>¿Eres nuevo?</h1>
         <p>Vamos a registrarnos.</p>
     </div>
+
     <div class="login-form">
         <form action="index.php" method="POST">
-            
-            <input type="text" name="usuario"  class="input-field" placeholder="Usuario" autocomplete="off" required>
-            
-            <input type="text" name="nombre" class="input-field" placeholder="Nombre" autocomplete="off" required>
-            
-            <input type="text" name="apellido" class="input-field" placeholder="Apellido" autocomplete="off" required>
-            
-            <input type="text" name="correo" class="input-field" placeholder="Correo electrónico" autocomplete="off" required>
 
-            <input type="text" name="telefono" class="input-field" placeholder="Numero de telefono" autocomplete="off" required>
+            <?php
+            include("modelo/conexion.php");
+            include("modelo/controlador_registrar_usuario.php");
+            ?>
+            
+            <input type="text" name="usuario"  class="input-field" placeholder="Usuario" autocomplete="off">
+            
+            <input type="text" name="nombre" class="input-field" placeholder="Nombre" autocomplete="off">
+            
+            <input type="text" name="apellido" class="input-field" placeholder="Apellido" autocomplete="off">
+            
+            <input type="text" name="correo" class="input-field" placeholder="Correo electrónico" autocomplete="off">
+
+            <input type="text" name="telefono" class="input-field" placeholder="Numero de telefono" autocomplete="off">
 
             
-            <input type="text" name="colegio" class="input-field" placeholder="Institución Educativa" autocomplete="off" required>
+            <input type="text" name="colegio" class="input-field" placeholder="Institución Educativa" autocomplete="off">
             
-            <input type="password" name="clave" class="input-field" placeholder="Contraseña" autocomplete="off" required>
+            <input type="password" name="clave" class="input-field" placeholder="Contraseña" autocomplete="off">
             
             <input type="submit" class="submit-btn" name="registrar" value="Registrarse">
 

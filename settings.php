@@ -120,7 +120,7 @@
            </li>
 
            <li>
-              <a href="settings.html" class="nav__link">
+              <a href="settings.php" class="nav__link">
                  <i class="ri-settings-3-fill"></i>
               </a>
            </li>
@@ -131,7 +131,7 @@
      <main class="container-settings">
         <section class="settings">
          <h1>Ajustes</h1>
-         <h3 class="settings-tile"><i class="fa-solid fa-user"></i> General</h4>
+         <h3 class="settings-tile"><i class="fa-solid fa-user"></i> General</h3>
             <div class="setting-box">
                <ul>
                   <a href="#"><li>Hola mundo</li></a>
@@ -140,11 +140,18 @@
                </ul>
             </div>
 
-            <h3 class="settings-tile"><i class="fa-solid fa-user"></i> General</h4>
+            <h3 class="settings-tile"><i class="fa-solid fa-user"></i> General</h3>
                <div class="setting-box">
                   <ul>
                      <li>Hola 1</li>
                      <li>Hola 2</li>
+                  </ul>
+               </div>
+            
+            <h3 class="settings-tile"><i class="fa-solid fa-user"></i> General</h3>
+               <div class="setting-box">
+                  <ul>
+                     <a href="logout.php"><li>Cerrar Sesion</li></a>
                   </ul>
                </div>
       </section>

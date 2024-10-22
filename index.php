@@ -25,7 +25,7 @@
             <input type="submit" class="submit-btn" value="Iniciar sesión">
                         
             <div class="sign-up-link">
-                <p>¿No tienes una cuenta? <a href="register.php" class="login-link">Regístrate.</a></p>
+                <p>¿No tienes una cuenta? <a href="modelo/register.php" class="login-link">Regístrate.</a></p>
             </div>
         </form>
     </div>

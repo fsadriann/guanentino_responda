@@ -2,6 +2,36 @@
 
 require 'conexion.php';
 
+if(isset($_POST[ 'registrar' ])) {
+    $usuario = $_POST ['usuario'];
+    $nombre = $_POST ['nombre'];
+    $apellido = $_POST ['apellido'];
+    $correo = $_POST ['correo'];
+    $telefono = $_POST ['telefono'];
+    $colegio = $_POST ['colegio'];
+    $clave = $_POST['clave'];
+    # $clave = password_hash($_POST['clave'], PASSWORD_BCRYPT);
+
+
+    $query = "INSERT INTO estudiante VALUES('', '1', '$usuario', '$nombre', '$apellido', '$correo', '$telefono', '$colegio', '$clave')";
+
+    $insertar = mysqli_query($conexion, $query) or trigger_error("Error en la insercion de los datos: ".mysqli_error($conexion));
+
+    if($insertar)
+    {
+        echo '<script type="text/javascript">
+                alert("Registro Exitoso");
+                window.location.href="index.php";
+            </script>';
+    }else{
+        echo '<script type="text/javascript">
+                alert("Ha ocurrido un error...");
+                window.location.href="index.php";
+            </script>';
+    }
+}
+
+
 ?>
 
 <!DOCTYPE html>
@@ -47,25 +77,3 @@ require 'conexion.php';
     </div>
 </body>
 </html>
-
-<?php
-
-if(isset($_POST[ 'registrar' ])){
-    $usuario = $_POST ['usuario'];
-    $apellido = $_POST ['apellido'];
-    $nombre = $_POST ['nombre'];
-    $correo = $_POST ['correo'];
-    $telefono = $_POST ['telefono'];
-    $colegio = $_POST ['colegio'];
-    $clave = $_POST['clave'];
-    # $clave = password_hash($_POST['clave'], PASSWORD_BCRYPT);
-
-
-    $insertarDatos = "INSERT INTO estudiante VALUES('', '1', '$usuario', '$apellido', '$nombre', '$correo', '$telefono', '$colegio', '$clave')";
-
-    $ejecutarInsertar = mysqli_query($conexion, $insertarDatos);
-}
-
-
-
-?>
